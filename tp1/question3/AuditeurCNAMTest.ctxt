@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AuditeurCNAMTest()
+comment0.text=\r\n\ Constructeur\ de\ la\ classe-test\ AuditeurCNAMTest.\r\n
+comment1.params=
+comment1.target=void\ setUp()
+comment1.text=\r\n\ Met\ en\ place\ les\ engagements.\r\n\ \r\n\ M\u00E9thode\ appel\u00E9e\ avant\ chaque\ appel\ de\ m\u00E9thode\ de\ test.\r\n
+comment2.params=
+comment2.target=void\ tearDown()
+comment2.text=\r\n\ Supprime\ les\ engagements\r\n\ \r\n\ M\u00E9thode\ appel\u00E9e\ apr\u00E8s\ chaque\ appel\ de\ m\u00E9thode\ de\ test.\r\n
+comment3.params=
+comment3.target=void\ test_toString()
+comment3.text=Un\ test\ de\ la\ m\u00E9thode\ toString().
+comment4.params=
+comment4.target=void\ test_nom_court()
+comment5.params=
+comment5.target=void\ test_nom_court_bis()
+comment6.params=
+comment6.target=void\ test_nom_avec_particule()
+comment7.params=
+comment7.target=void\ test_nom_compose()
+comment8.params=
+comment8.target=void\ test_nom_court_avec_particule()
+comment9.params=
+comment9.target=void\ test_nom_avec_accent()
+numComments=10

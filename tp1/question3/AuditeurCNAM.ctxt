@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=nom\ prenom\ matricule
+comment0.target=AuditeurCNAM(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ "Cr\u00E9ation",\ le\ constructeur\ d'un\ auditeur\ avec\ son\ nom,\ son\ pr\u00E9nom\ et\ son\r\n\ matricule.\r\n\ \r\n\ @param\ nom\r\n\ \ \ \ \ \ \ \ \ \ \ \ le\ nom\ de\ l'auditeur\r\n\ @param\ prenom\r\n\ \ \ \ \ \ \ \ \ \ \ \ son\ pr\u00E9nom\r\n\ @param\ matricule\r\n\ \ \ \ \ \ \ \ \ \ \ \ sur\ la\ carte\ d'inscription,\ pr\u00E8s\ de\ la\ photo\r\n
+comment1.params=
+comment1.target=java.lang.String\ login()
+comment1.text=\r\n\ le\ login\ au\ Cnam\ \:\ 6\ premi\u00E8res\ lettres\ du\ nom\ suivies\ de\ la\ premi\u00E8re\r\n\ lettre\ du\ pr\u00E9nom\ s\u00E9par\u00E9es\ de\ '_'\ .\ le\ login\ retourn\u00E9\ est\ en\ minuscules,\r\n\ le\ trait\ d'union,\ ou\ sp\u00E9ciaux\ <i>(pour\ unix)</i>\ sont\ remplac\u00E9s\ par\ des\r\n\ '_'\ pas\ de\ caract\u00E8res\ accentu\u00E9s\ pour\ le\ login\ voir\ les\ classes\r\n\ pr\u00E9d\u00E9fines,\ java.lang.String\ \:\ les\ m\u00E9thodes\ replaceAll,\ toLowerCase\ et\r\n\ substring\ java.lang.Math\ \:\ la\ m\u00E9thode\ min<br>\r\n\ <b>BlueJ\ \:\ Menu\ Aide</b>\r\n\ \r\n\ @return\ le\ login\ du\ Cnam\ simplifi\u00E9,\ sans\ les\ adaptations\ dues\ aux\r\n\ \ \ \ \ \ \ \ \ homonymes...\r\n
+comment2.params=
+comment2.target=java.lang.String\ nom()
+comment2.text=\r\n\ Lecture\ du\ nom\ de\ l'auditeur.\r\n\ \r\n\ @return\ son\ nom\r\n
+comment3.params=
+comment3.target=java.lang.String\ prenom()
+comment3.text=\r\n\ Lecture\ du\ pr\u00E9nom\ de\ l'auditeur.\r\n\ \r\n\ @return\ son\ pr\u00E9nom\r\n
+comment4.params=
+comment4.target=java.lang.String\ matricule()
+comment4.text=\r\n\ Lecture\ du\ matricule\ de\ l'auditeur.\r\n\ \r\n\ @return\ son\ matricule\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ m\u00E9thode\ toString\ (\ m\u00E9thode\ red\u00E9finie\ de\ la\ classe\ Object).\r\n\ \r\n\ @return\ la\ concat\u00E9nation\ du\ nom,\ du\ pr\u00E9nom\ et\ du\ login,\ selon\ cette\r\n\ \ \ \ \ \ \ \ \ syntaxe\r\n\ \ \ \ \ \ \ \ \ <code>nom()\ +\ "\ "\ +\ prenom()\ +\ \ "\ login\ \:\ "\ +\ login()</code>\r\n
+numComments=6

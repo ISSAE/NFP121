@@ -1,0 +1,21 @@
+#BlueJ package file
+package.editor.height=279
+package.editor.width=448
+package.editor.x=157
+package.editor.y=105
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+target1.editor.height=669
+target1.editor.width=752
+target1.editor.x=0
+target1.editor.y=0
+target1.height=50
+target1.name=Picture
+target1.naviview.expanded=false
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=80
+target1.x=130
+target1.y=110
