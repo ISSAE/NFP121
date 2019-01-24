@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=FahrenheitCelsiusTest()
+comment0.text=\nConstructeur\ de\ la\ classe-test\ FahrenheitCelsiusTest\n\n
+comment1.target=void\ setUp()
+comment1.text=\nMet\ en\ place\ les\ engagements.\n\nM\u00E9thode\ appel\u00E9e\ avant\ chaque\ appel\ de\ m\u00E9thode\ de\ test.\n\n
+comment2.target=void\ tearDown()
+comment2.text=\nSupprime\ les\ engagements\n\nM\u00E9thode\ appel\u00E9e\ apr\u00E8s\ chaque\ appel\ de\ m\u00E9thode\ de\ test.\n\n
+comment3.target=void\ test_fahrenheitEnCelsius()
+comment3.text=\nIl\ ne\ vous\ reste\ plus\ qu'\u00E0\ d\u00E9finir\ une\ ou\ plusieurs\ m\u00E9thodes\ de\ test.\ Ces\nm\u00E9thodes\ doivent\ v\u00E9rifier\ les\ r\u00E9sultats\ attendus\ \u00E0\ l'aide\ d'assertions\nassertTrue(<boolean>).\ Par\ convention,\ leurs\ noms\ devraient\ d\u00E9buter\ par\n"test".\ Vous\ pouvez\ \u00E9baucher\ le\ corps\ gr\u00E2ce\ au\ menu\ contextuel\n"Enregistrer\ une\ m\u00E9thode\ de\ test".\n\n
+numComments=4
