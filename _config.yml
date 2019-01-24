@@ -1,1 +1,15 @@
 theme: jekyll-theme-architect
+
+name: Programmation Avancée 
+
+author: Pascal Fares
+
+author_email: pascal.fares@isae.edu.lb
+
+title: Programmation Avancée et Patron de conception en Java
+
+google_analytics: UA-24954673-1
+
+plugins:
+  - jekyll-sitemap
+
