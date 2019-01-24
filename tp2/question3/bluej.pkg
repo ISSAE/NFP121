@@ -1,0 +1,16 @@
+#BlueJ package file
+package.editor.height=394
+package.editor.width=641
+package.editor.x=124
+package.editor.y=117
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+target1.height=50
+target1.name=IHMFahrenheit
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=120
+target1.x=230
+target1.y=50
