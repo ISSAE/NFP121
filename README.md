@@ -1,7 +1,7 @@
 # Travaux pratique et complément NFP121 au Cnam Liban
 
-C'est TP sont issue des TP du Cnam Paris http://jfop.cnam.fr/NFP121 et adapté aux cours des xcentres d'enseignement de l'[ISSAE Cnam Liban](http://www.cnam-liban.fr)
-Les supports de cours adaptés sont disponibles dans les 'classroom' de vos enseignants http://classroom.isae.edu.lb
+Ces TP sont issues des TP du Cnam Paris http://jfop.cnam.fr/NFP121 et adapté au cours des centres d'enseignement de l'[ISSAE Cnam Liban](http://www.cnam-liban.fr)
+Les supports de cours adaptés sont disponibles dans les 'classrooms' de vos enseignants http://classroom.isae.edu.lb
 
 
 L'activité de programmation étant primordiale dans ce cours, les TD seront des TP/TD comportant :
