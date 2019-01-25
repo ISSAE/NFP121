@@ -1,7 +1,4 @@
-<html>
-<head>
-    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
-    <title>NFP121 - TP1</title>
+
     <style type="text/css">
         body {
             background: #E5DED6;
@@ -37,10 +34,8 @@
         }
     </style>
 
-</head>
-<body>
-    <h2 style="text-align: center">NFP 121 - TP1</h2>
-    <h2 style="text-align: center">L'environnement de programmation BlueJ</h2>
+## NFP 121 - TP1
+## L'environnement de programmation BlueJ
     <br />
     <hr>
     <br />
@@ -58,7 +53,7 @@
             </td>
         </tr>
         <tr>
-            <td>Matricule
+            <td>Identifiant
             </td>
             <td>...
             </td>
@@ -66,22 +61,20 @@
     </table>
     <br />
     <hr />
-    <h3>Question 1 :</h3>
+### Question 1 :
     Votre réponse...
 
     <hr />
-    <h3>Question 2 :</h3>
-    Votre réponse...
-
-    <br />
-    <hr />
-    <h3>Question 3 :</h3>
+### Question 2
     Votre réponse...
 
     <br />
     <hr />
-    
-        <h3>Conclusion, biliographie et remarques :</h3>
+### Question 3 :
+    Votre réponse...
+
+
+### Conclusion, biliographie et remarques :
         <i style="font-size:12px;">... Une seule page html, limitez le nombre de clics</i>
     
 </body>
