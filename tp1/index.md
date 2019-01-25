@@ -1,5 +1,5 @@
 
-    <style type="text/css">
+<style type="text/css">
         body {
             background: #E5DED6;
             background-color: #fff;
@@ -32,14 +32,12 @@
         hr {
             margin: 15px 0 15px 0;
         }
-    </style>
+</style>
 
 ## NFP 121 - TP1
 ## L'environnement de programmation BlueJ
-    <br />
-    <hr>
-    <br />
-    <table>
+
+<table>
         <tr>
             <td>Nom
             </td>
@@ -58,24 +56,25 @@
             <td>...
             </td>
         </tr>
-    </table>
-    <br />
-    <hr />
+</table>
+
 ### Question 1 :
+
     Votre réponse...
 
-    <hr />
 ### Question 2
+
     Votre réponse...
 
-    <br />
-    <hr />
+
 ### Question 3 :
+    
     Votre réponse...
 
 
 ### Conclusion, biliographie et remarques :
-        <i style="font-size:12px;">... Une seule page html, limitez le nombre de clics</i>
+
+<i style="font-size:12px;">... Une seule page html, limitez le nombre de clics</i>
     
 </body>
 </html>
