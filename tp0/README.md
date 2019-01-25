@@ -10,7 +10,6 @@ Après installation vous aurez un gitbash (qui donne un environnement de command
 
 Voici une petite présentation en image:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NHA9jiZ2fHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # compte github
 
@@ -20,13 +19,15 @@ Voici une petite présentation en image:
 
 # faire le fork des sujets de TP
 
+![Frok](img/fork.png)
+
 # configurer votre projet "forké"
 
 # Un peu de markdown (pour publier vos documentations)
 
 ## Exemple d'inclusion de code Java
 
-```Java
+```java
 /**
      * Create a Canvas.
      * 
