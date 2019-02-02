@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=PolygoneRegulier
+comment0.text=\r\n\ Polygone\ Regulier\r\n\r\n\ @author\ Pascal\ Fares\r\n\ @version\ 0.1\r\n
+comment1.params=l\ nb
+comment1.target=PolygoneRegulier(int,\ int)
+comment1.text=\r\n\ Conctructeur\ publique\r\n\ @param\ l\ \:\ longueur\ d'un\ cot\u00E9\r\n\ @param\ nb\ \:\ nombre\ de\ cot\u00E9s\r\n
+comment2.params=
+comment2.target=double\ surface()
+comment2.text=\r\n\ <h2>Calcul\ surface\ polygone\ r\u00E9gulier</h2>\r\n\ \r\n\ <p>Voir\ pour\ les\ informations\ sur\ les\ polygone\ r\u00E9gulier\ https\://fr.wikipedia.org/wiki/Polygone_r%C3%A9gulier\r\n\ </p>\r\n\ <p>n*a^2/4*tan(PI/n)</p>\r\n
+comment3.params=
+comment3.target=int\ getLongueurDuCote()
+comment3.text=\r\n\ Obtenir\ longueur\ cot\u00E9\r\n
+numComments=4

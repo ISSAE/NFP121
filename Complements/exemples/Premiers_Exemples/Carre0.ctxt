@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Carre0
+comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ Carre\ ici.\r\n\r\n\ @author\ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment1.params=l
+comment1.target=Carre0(int)
+comment1.text=\r\n\ Constructeur\ Carre\r\n\ @param\ l\ \:\ talle\ du\ cot\u00E9\r\n
+numComments=2
