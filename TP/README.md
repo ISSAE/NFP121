@@ -1,12 +1,4 @@
-# Portail, Compléments, exercices des cours et Travaux pratique : NFP121 Cnam Liban
-
-La plupart des sources, exercices, exemples sont issues des cours du "Le Cnam" http://jfod.cnam.fr/NFP121 parfois adaptés aux enseignements des centres du Cnam Liban
-
-## [Les compléments](Complements/)
-
-## [Sources des exemples vue en cours](Exemples/)
-
-## [Travaux pratique](TP/)
+# Travaux pratique
 
 Ces TP sont issues des TP du Cnam Paris http://jfop.cnam.fr/NFP121 et adapté au cours des centres d'enseignement de l'[ISSAE Cnam Liban](http://www.cnam-liban.fr)
 Les supports de cours adaptés sont disponibles dans les 'classrooms' de vos enseignants http://classroom.isae.edu.lb
