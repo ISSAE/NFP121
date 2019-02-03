@@ -4,7 +4,7 @@ Dites au lecteur (qui ne sait rien du projet) ce qu'il a besoin de savoir.
 Au minimum, remplissez cette description :
 ------------------------------------------------------------------------
 
-TITRE DU PROJET : Polygone régulier et Carré : Heritage, polimorphisme, 
+TITRE DU PROJET : Polygone régulier et Carré : Heritage,
 BUT POURSUIVI : Présenter BlueJ et les notions du paradigmes orienté objet
 VERSION ou DATE : voir git
 COMMENT INVOQUER CE PROJET :
