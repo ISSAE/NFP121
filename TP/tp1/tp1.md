@@ -16,7 +16,7 @@ titre: TP 1 - L'environnement de programmation BlueJ, git et github
                         ce cours</span>
                 </div>
 
-                <div class="paragraphe">
+<div class="paragraphe">
                     <ol>
                         <li>Créer votre compte github avec vos adresse email de l'@isae.edu.lb et le nom d'utilisateur
                             identifiant Cnam Liban [Voir la vidéo](https://youtu.be/UShoAaZihRU)</li>
@@ -31,7 +31,7 @@ titre: TP 1 - L'environnement de programmation BlueJ, git et github
                     <img border="0" src="images/tp1.ht1.jpg" width="800" height="600">
                 </p>
 
-                <div class="paragraphe">
+<div class="paragraphe">
                     Les 3 questions correspondent aux 3 paquetages
                     <ul>
                         <li>si vous avez cloner dans c:\sharing\mesgit\ Votre projet tp1 se trouve maintenant dans le
@@ -40,15 +40,14 @@ titre: TP 1 - L'environnement de programmation BlueJ, git et github
                             encore https://issae.github.io/NFP121/tp1/tp1.html</li>
                     </ul>
                 </div>
-                <br />
-                <hr />
+                
 
-                <div class="question">
+<div class="question">
                     <img src="images/question1.png" width="101" height="80" />
                     <span>Introduction</span>
                 </div>
 
-                <div class="paragraphe">
+<div class="paragraphe">
                     Champs, constructeurs, méthodes et instances d'une classe (introduction extraite du livre Objects First
                     de M .Kölling,
                     <a target="_blank" href="http://jfod.cnam.fr/progAvancee/objects-first-ch1.pdf">chapitre 1 de
@@ -65,7 +64,7 @@ titre: TP 1 - L'environnement de programmation BlueJ, git et github
                 <br />
                 <hr />
 
-                <div class="question">
+<div class="question">
                     <img src="images/question2.png" width="101" height="80" />
                     <span>Introduction suite</span>
                 </div>
@@ -88,12 +87,12 @@ titre: TP 1 - L'environnement de programmation BlueJ, git et github
                     <img src="images/question3.png" width="101" height="80" />
                     <span>Introduction, tests, mise en oeuvre</span>
                 </div>
-                <div class="paragraphe">
-                    <ol>
-                        <li>Le paquetage question3 contient la classe AuditeurCnam fondée sur le squelette de programme
+<div class="paragraphe">
+<ol>
+<li>Le paquetage question3 contient la classe AuditeurCnam fondée sur le squelette de programme
                             suivant :</li>
                         <li>
-                            <div class="codesource">
+<div class="codesource">
                                 <code>
                                     <font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">AuditeurCNAM&nbsp;</font><font color="#000000">{</font>
                                     <br />
@@ -249,7 +248,7 @@ titre: TP 1 - L'environnement de programmation BlueJ, git et github
                                     <br />
                                     <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">String&nbsp;toString</font><font color="#000000">()&nbsp;{</font>
                                     <br />
-                                    <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">nom</font><font color="#000000">()&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#2a00ff">&#34;&nbsp;&#34;&nbsp;</font><font color="#000000">+&nbsp;prenom</font><font color="#000000">()&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#2a00ff">&#34;&nbsp;login&nbsp;:&nbsp;&#34;&nbsp;</font><font color="#000000">+&nbsp;login</font><font color="#000000">()</font><font color="#000000">;</font>
+                                    <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font fcolor="#7f0055"><b>return&nbsp;</b></font><font color="#000000">nom</font><font color="#000000">()&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#2a00ff">&#34;&nbsp;&#34;&nbsp;</font><font color="#000000">+&nbsp;prenom</font><font color="#000000">()&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#2a00ff">&#34;&nbsp;login&nbsp;:&nbsp;&#34;&nbsp;</font><font color="#000000">+&nbsp;login</font><font color="#000000">()</font><font color="#000000">;</font>
                                     <br />
                                     <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font>
                                     <br />
@@ -262,10 +261,8 @@ titre: TP 1 - L'environnement de programmation BlueJ, git et github
                         <li>Créer plusieurs instances (clic droit sur la classe), vérifiez la valeur des données
                             d'instances avec l'inspecteur d'objets </li>
                         <li>Exécutez les tests unitaires proposés, ceux-ci sont minimaux</li>
-                        <li>Ajoutez vos propres tests, voir le tutoriel "<a href="http://www.bluej.org/doc/documentation.html"
-                                                                            target="_blank">Unit Testing in BlueJ</a>"</li>
-
-                    </ol>
-                    Envoyer votre projet sur le github
-                </div>
-            </div>
+                        <li>Ajoutez vos propres tests, voir le tutoriel "<a href="http://www.bluej.org/doc/documentation.html" target="_blank">Unit Testing in BlueJ</a>"</li>
+</ol>
+Envoyer votre projet sur le github
+</div>
+</div>

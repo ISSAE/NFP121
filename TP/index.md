@@ -22,6 +22,6 @@ L'activité de programmation étant primordiale dans ce cours, les TD seront des
 3. Les instructions vous seront donné sous forme de devoir dans la classroom http://classroom.isae.edu.lb 
 
 # Liste des TP
-* [TP0 : préparer l'environnement de travail](tp0/)
-* [TP1](tp1/tp1.html)
-* [TP2](tp2/tp2.html)
+* [TP0 : préparer l'environnement de travail](tp0/index)
+* [TP1](tp1/tp1)
+* [TP2](tp2/tp2)
