@@ -16,8 +16,9 @@ L'activité de programmation étant primordiale dans ce cours, les TD seront des
 
 Pour participer à ces TP il faut d'abord vous identifier par votre nom précédé de LIB_ (en CAPITALES de préférence exemple LIB_PASCAL) et votre numéro d'inscription d'auditeur Cnam Liban (qui vous servira de password, matricule, et vous identifiera pour les points de bonus), en l'absence de ce numéro un mot de passe de votre choix : [Faite dès maintenant la préinscription aux TP](/preInscription/)
 
-Les TP seront réalisés avec [BlueJ](http://www.bluej.org/)  la dernière version inclut le JDK (1.8), vous trouverez [ici]
-(https://issae.github.io/NFP121/TP/tp0/) des indications sur l'environnement de travail pour cette Ue
+Les TP seront réalisés avec [BlueJ](http://www.bluej.org/)  la dernière version inclut le JDK (1.8), vous trouverez [ici : préparer l'environnement](https://issae.github.io/NFP121/TP/tp0/) des indications sur l'environnement de travail et pour cette Ue
+
+<hr\>
 
 ## > [Les compléments](Complements/)
 
