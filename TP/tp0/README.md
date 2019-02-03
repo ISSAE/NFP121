@@ -17,15 +17,58 @@ Voici une petite présentation en image:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NHA9jiZ2fHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# faire le fork des sujets de TP
+## faire le fork des sujets de TP
 
 ![Frok](img/fork.png)
 
-# configurer votre projet "forké"
+## configurer votre projet "forké"
 
-# Un peu de markdown (pour publier vos documentations)
+## récupérer le code sur votre pc
 
-## Exemple d'inclusion de code Java
+La première fois
+```bash
+git clone <référenced de votre projet github>
+```
+![Clone avec https](img/cloneWithHttps.PNG) ou ![Clone avec ssh](img/cloneWithSSH.PNG)
+
+De temps en temps récupérer les dernières modification du projet d'origine  ``` git pull https://github.com/ISSAE/NFP121.git```
+
+
+```bash
+pascalfares@DomicileTerra:~$ git clone git@github.com:nfp121/NFP121.git
+Cloning into 'NFP121'...
+remote: Enumerating objects: 272, done.
+remote: Counting objects: 100% (272/272), done.
+remote: Compressing objects: 100% (193/193), done.
+remote: Total 272 (delta 77), reused 250 (delta 59), pack-reused 0
+Receiving objects: 100% (272/272), 46.12 MiB | 674.00 KiB/s, done.
+Resolving deltas: 100% (77/77), done.
+Checking out files: 100% (190/190), done.
+pascalfares@DomicileTerra:~$ cd NFP121/
+pascalfares@DomicileTerra:~/NFP121$ # Je suis dans le répértoire git de travail
+pascalfares@DomicileTerra:~/NFP121$ # faire de temps en temps
+pascalfares@DomicileTerra:~/NFP121$ git pull https://github.com/ISSAE/NFP121.git
+remote: Enumerating objects: 94, done.
+remote: Counting objects: 100% (94/94), done.
+remote: Compressing objects: 100% (44/44), done.
+remote: Total 84 (delta 34), reused 77 (delta 27), pack-reused 0
+Unpacking objects: 100% (84/84), done.
+From https://github.com/ISSAE/NFP121
+ * branch            HEAD       -> FETCH_HEAD
+Updating 346a04a..d86ac3d
+Checking out files: 100% (383/383), done.
+Fast-forward
+ Complements/README.md                                              |   0
+ Complements/exemples/Premiers_Exemples/Carre.ctxt                  |   9 +
+ Complements/exemples/Premiers_Exemples/Carre.java                  |  22 ++
+etc....
+```
+
+## configurer votre projet "forké"
+
+## Un peu de markdown (pour publier vos documentations)
+
+#### Exemple d'inclusion de code Java
 
 ```java
 /**
