@@ -9,24 +9,24 @@
 
 <a title="Évitez les caractères accentués, quote, espace, ..." style="text-decoration: none;">Nom<SUP><font size=2>1</FONT></SUP></a> : 
 <input type="text" size="20" name="nom">
-Mot de passe<SUP><font size=2>1,2,3</FONT></SUP>
+Mot de passe<SUP>1,2,3</SUP>
 <input type="text" size="20" name="matricule">
 <input type="submit" name="B1" value="pré-inscription">
-votre mail<SUP><font size=2>4</FONT></SUP> : 
+votre mail<sup>4</sup> : 
 <input type="text" size="30" name="e_mail" value="????">
     
 
-<font size=4><sup>1</sup> <b>En évitant les caractères accentués, quote, espace, tiret, spéciaux (@,!,§,...) ... </b></font>
+<sup>1</sup> **En évitant les caractères accentués, quote, espace, tiret, spéciaux (@,!,§,...) ... **
     
-<font size=3><sup>2</sup><font size=3> Le mot de passe: le numéro ID Cnam LibanL se trouve sur votre carte d'auditeur Cnam, à défaut un mot de passe de votre choix. http://si.isae.edu.lb </font>
+<sup>2</sup>Le mot de passe: le numéro ID Cnam LibanL se trouve sur votre carte d'auditeur Cnam, à défaut un mot de passe de votre choix. http://si.isae.edu.lb 
 
-<font size=3><sup>3</sup><font size=3> préfixer le matricule par <b>LIB_</b></font>
+<sup>3</sup>préfixer le matricule par <b>LIB_</b>
 
-    exemple : un auditeur inscrit en FOD dont le numéro INE est 10-12345, se pré-inscrira avec le mot de passe FOD_10-12345</i><br>
+    exemple : un auditeur inscrit au Cnam Liban dont le numéro est 1000 f, se pré-inscrira avec le mot de passe LIB_1000f
     En cas de doute, consultez l'enseignant de votre centre pour le préfixe à adopter.
 
 
-<font size=3><sup>4</sup><font size=3> Un courriel/accusé d'inscription vous sera envoyé (devrait vous être envoyé...).</font><br>
+<sup>4</sup> Un courriel/accusé d'inscription vous sera envoyé (devrait vous être envoyé...).</font><br>
 
 </form>
 
