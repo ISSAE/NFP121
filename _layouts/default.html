@@ -26,7 +26,12 @@
       </div>
       <div id="header_title">
         NFP121 : Programmation avancée<br />
-        {{ page.titre | Supports, exemples, exercices dirigés, Travaux pratiques et compléments }}
+        {% if page.titre %}
+           {{ page.titre }} 
+        {% else %}
+           Supports, exemples, exercices dirigés, Travaux pratiques et compléments
+        {% endif %}
+        <br />
         <a href="{{ site.github.repository_url }}"><small>Voir les sources sur</small> GitHub</a>
       </div>
     </div>
