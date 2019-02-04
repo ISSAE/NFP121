@@ -6,11 +6,11 @@ Pour suivre avec profit cette UE il faut suivre régulièrement le cours (séanc
 
 Les documents associés aux cours du Cnam Liban (au format PDF et sur github), sont accessibles sur le net au fur et à mesure du déroulement du cours. Le cours parisien de l'années 2018-2019 est déjà disponible ici : http://jfod.cnam.fr 
 
-L'activité de programmation étant primordiale dans ce cours, les TD seront des TP/TD comportant amener vos portable avec vous:
+L'activité de programmation étant primordiale dans ce cours, les TD seront des TP/TD. Amener vos ordinateurs portable avec vous:
 
 * une partie de spécification d'un exercice (en séance présentielle)
 * une partie de réalisation d'un exercice (sur machine "à la maison").
-* Le travail réalisé sera rendu chaque semaine sur le web sous deux formes. 
+* Le travail "TP en autonome" réalisé sera rendu chaque semaine sur le web sous deux formes. 
     * un projet Java qui sera testé automatiquement
     * une page html (ou markdown) de compte rendu du travail réalisé.
 
@@ -20,8 +20,10 @@ Les TP seront réalisés avec [BlueJ](http://www.bluej.org/)  la dernière versi
 
 <hr\>
 
+## > [Les séances](Seances/)
+## > [Les ED/TP assisté](ED/)
+## > [Travaux pratique en autonome](TP/)
 ## > [Les compléments](Complements/)
-
 ## > [Sources des exemples vue en cours](Exemples/)
 
-## > [Travaux pratique](TP/)
+

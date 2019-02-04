@@ -1,20 +1,15 @@
-<HTML>
-<HEAD>
-  <TITLE>id&eacute;e java imp&eacute;ratif ED00</TITLE>
-</HEAD>
-<BODY bgcolor="#64E9A6">
-<CENTER>
-  <BIG>id&eacute;e : &nbsp;java imp&eacute;ratif - algorithmique</BIG><BR>
-</CENTER>
-<P>
-  <HR>
-<P>
-<TABLE BORDER CELLPADDING="2">
-  <TR>
-    <TD><BIG><BIG><BIG><BIG>a<SUP>b</SUP></BIG></BIG></BIG></BIG> :
-      &nbsp;<BIG>application Java de l'exponentiation de 2 entiers 'a' et 'b' quand
-      on ne connait que les op&eacute;rateurs * et &#171;-1&#187;.</BIG></TD>
-    <TD><PRE>public class ExponentiationDe2Entiers{
+---
+titre: id&eacute;e java imp&eacute;ratif ED00
+---
+
+<table border cellpading="2">
+<tr>
+<td width="25%"><BIG><BIG><BIG><BIG>a<SUP>b</SUP></BIG></BIG></BIG></BIG> :
+      &nbsp;<BIG>application Java de l'exponentiation de 2 entiers 'a' et 'b' quand on ne connaît que les op&eacute;rateurs * et &#171;-1&#187;.</BIG></TD>
+<td>
+
+  ```java  
+  public class ExponentiationDe2Entiers{
 
   public static void main(String [] args){
     int a = 2;int b = 3;
@@ -30,20 +25,22 @@
     int s = 0; int i = 0;
     int r = b; 
     int power = 1;
-    while( r &gt; 0){
+    while(r > 0){
       r = r - 1;
       power = power * a;
     }
     return power;
   }
 }
-</PRE>
-    </TD>
-  </TR>
-  <TR>
-    <TD><BIG>Construire l'application Java de la recherche de l'indice de la
+```
+</TD></TR>
+<tr>
+<td><BIG>Construire l'application Java de la recherche de l'indice de la
       plus grande valeur dans un tableau &nbsp;de n entiers naturels (&gt;=0) .</BIG></TD>
-    <TD><PRE>public class TableauIMax{
+<td>
+
+```java
+public class TableauIMax{
 
   public static void main(String [] args){
 
@@ -59,7 +56,7 @@
     i    = 0; 
     imax = 0;
     int n = tab.length-1;
-    while( i &lt; n){
+    while(i < n){
       int k1 = n-i;
 
       i++;
@@ -69,16 +66,9 @@
     return imax;
   }
 }
-</PRE>
-    </TD>
-  </TR>
-  <TR>
-    <TD></TD>
-    <TD></TD>
-  </TR>
-</TABLE>
-<P>
-<BR>
-  <HR>
-retour <A HREF="../index.html">^</A><BR>
-</BODY></HTML>
+```
+</td></tr>
+</table>
+
+[retour](.)
+

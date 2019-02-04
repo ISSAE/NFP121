@@ -80,11 +80,11 @@ public class TestHelloWorld {
 
 [Exercice n°1](Exercices/ED00.1.Hello) : compilation, exécution "hello world"
 
-Exercice n°2 : "static" ou NON ?
+[Exercice n°2](Exercices/ED00.2) : "static" ou NON ?
 
 Découvrir les objets (classes) et premiers programmes :
 
-Un Exercice  plus complet : la course de ski...
+[Un Exercice  plus complet](ED00_CourseSki) : la course de ski...
 
 Remarque :
 
@@ -96,20 +96,21 @@ un peu d'algorithmique ou Java impératif :
 
 ... reprendre en Java tous les algorithmes classiques sur les entiers avec des tableaux divers et variés.
 
-a<sup>b</sup> :  créer l'application Java de l'exponentiation de 2 entiers 'a' et 'b' quand on ne connait que les opérateurs * et «-1».
-Construire l'application Java de la recherche de l'indice de la plus grande valeur dans un tableau  de n entiers naturels (>=0) .
-/* une idée...
+* a<sup>b</sup> :  créer l'application Java de l'exponentiation de 2 entiers 'a' et 'b' quand on ne connaît que les opérateurs * et «-1».
+* Construire l'application Java de la recherche de l'indice de la plus grande valeur dans un tableau  de n entiers naturels (>=0) .
 
-Pouvez vous donner une définition claire aux concepts suivants (rappel nous sommes dans un contexte JAVA)? 
-Sinon revoir le cours,... posez la question en TD, en cours, sur le forum de l'UE
+/* [une idée...](ID_ED00.java_imp)
 
-classe
-objet (style JAVA)
-attribut d'instance, attribut de classe
-méthode
-signature de méthode
-constructeur
-surcharge de méthode, de constructeur
+### Pouvez vous donner une définition claire aux concepts suivants (rappel nous sommes dans un contexte JAVA)? 
+_Sinon revoir le cours,... posez la question en TD, en cours, sur le "[issue tracker](https://github.com/ISSAE/NFP121/issues)" de l'UE et la classroom de vos enseignants, google..._ 
+
+* classe
+* objet (style JAVA)
+* attribut d'instance, attribut de classe
+* méthode
+* signature de méthode
+* constructeur
+* surcharge de méthode, de constructeur
 
   
 
