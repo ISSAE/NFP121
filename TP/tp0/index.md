@@ -5,9 +5,12 @@ titre: Environnement pour NFP121 Cnam Liban
 
 Télécharger et installer la dernière version de [BlueJ](https://www.bluej.org/)
 
+Si vous souhaitez utiliser la même jdk que BlueJ en ligne de commande : définir la variable d'environnement JDK_HOME et modifier le PATH (voir cette vidéo)
+
+
 # git
 
-Récupérer git for windows ici https://git-scm.com/download/win 
+Récupérer git for windows [ici](https://git-scm.com/download/win)
 
 Après installation vous aurez un gitbash (qui donne un environnement de commande unix) ainsi les commandes éventuelles que nous décrirons dans les sujet de TP seront les mêmes que vous utiliser Windows, Mac ou Linux
 
