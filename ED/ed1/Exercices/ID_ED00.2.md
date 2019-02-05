@@ -25,15 +25,26 @@ suggestions :
 * la m&eacute;thode doit-elle &ecirc;tre aussi "static" ?
 
 
-<TABLE BORDER CELLPADDING="2">
-  <TR>
-    <TD>classe "CompteurInstance"</TD>
-    <TD>
+<table border cellpadding="2">
+<tr>
+<td> 
+
+**classe "CompteurInstance"** 
+
+</td>
+<td> 
+
+**classe "CompteurInstanceTest"** 
+
+</td>
+</tr>
+<tr>
+<td>
 
 ```java		
 public class CompteurInstance
 {
-	// variables d'instance - remplacez l'exemple qui suit par le v&ocirc;tre
+	// variables d'instance 
 	private static int nbInstances=0;
 
 	/**
@@ -45,17 +56,12 @@ public class CompteurInstance
 		nbInstances += 1;
 	}
 
-	/**
-	 * Un exemple de m&eacute;thode - remplacez ce commentaire par le v&ocirc;tre
-	 * 
-	 * @param  y   le param&egrave;tre de la m&eacute;thode
-	 * @return     la somme de x et de y 
-	 */
+	
 	public int voirNbInstances()
 	{
-		// Ins&eacute;rez votre code ici
 		return nbInstances;
 	}
+
 	public static int statVoirNbInstances()
 	{
 		// Ins&eacute;rez votre code ici
@@ -63,10 +69,7 @@ public class CompteurInstance
 	}
 }
 ```
-</TD></TR>
-<TR>
-    <TD>classe "CompteurInstanceTest"</TD>
-    <TD>
+</td><td>
 
 ```java
 public class CompteurInstanceTest extends junit.framework.TestCase
@@ -79,7 +82,6 @@ public class CompteurInstanceTest extends junit.framework.TestCase
     {
     }
    
-
 	public void testCptInstances()
 	{
 		CompteurInstance compteur1 = new CompteurInstance();
@@ -93,8 +95,9 @@ public class CompteurInstanceTest extends junit.framework.TestCase
 	}
 }
 ```
-</TD></TR>
-</TABLE>
+
+</td></tr>
+</table>
 
 <hr/>
 

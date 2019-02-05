@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+  <TITLE>exo 3 s&eacute;ance J03</TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<P ALIGN=Left>
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD><BIG><BIG><BIG>Exercice n&#176; 3: </BIG></BIG></BIG>pour une
+      granularit&eacute; plus fine (trop fine ?)
+      <P>
+      On a remarqu&eacute; &agrave; l'exercice pr&eacute;c&eacute;dent que
+      l'&eacute;criture des m&eacute;thodes pour les expressions compos&eacute;es
+      est encore complexe.<BR>
+      Alors on sp&eacute;cialise ces expressions compos&eacute;es en Addition ,
+      Soustraction , Multiplication et Division.
+      <P>
+      <BIG>Question 1 : Donner le nouveau sch&eacute;ma Uml et la nouvelle implantation
+      avec le programme de <A HREF="sol.J03.3.html#Test">test</A>
+      modifi&eacute;.</BIG>
+      <P>
+      En fait les expressions compos&eacute;es peuvent avoir des op&eacute;rateurs
+      binaires mais aussi des op&eacute;rateurs unaires (comme l'inversion ou -unaire)
+      et les Expressions simples sont en fait des expressions constantes qui peuvent
+      &ecirc;tre autre chose que des nombres.<BR>
+      On a donc r&eacute;organis&eacute;e le graphe d'h&eacute;ritage de la
+      mani&egrave;re suivante :
+      <P ALIGN=Left>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; <IMG SRC="ExprOOO.gif" WIDTH="588" HEIGHT="386" ALIGN="Middle">
+      <P ALIGN=Left>
+      <BIG>Question 2 : Donner la nouvelle implantation avec le programme de
+      <A HREF="sol.J03.3.html#Test">test</A> modifi&eacute;.</BIG>
+      <P ALIGN=Left>
+      <BIG>Question 3 : On &nbsp;a remarqu&eacute; que l'affichage par la m&eacute;thode
+      'toString()' ne convient que si l'&eacute;criture de l'expression ne demande
+      pas de parenth&egrave;ses. Ajouter un affichage postfixe des expressions.
+      Le moins unaire sera not&eacute;</BIG> _.<BR>
+      <BIG><CODE><STRONG>Exemple : 1+2*(-5)-3 postfix&eacute;e : 1 2 5 _ * 3 -
+      +</STRONG></CODE></BIG>
+      <P ALIGN=Left>
+      <BIG>Question 4: Ajouter un affichage pr&eacute;fixe des expressions i.e.
+      l'&eacute;criture fonctionnelle.</BIG><BR>
+      <BIG><CODE><STRONG>Exemple : 1+2*(-5)-3 pr&eacute;fix&eacute;e : add(1 ,
+      sous(mult(2 , inv(5)) , 3))</STRONG></CODE></BIG>
+      <P ALIGN=Left>
+      <BIG><I><STRONG>Remarque : --M&eacute;thode informelle d'introduction d'une
+      nouvelle op&eacute;ration/action sur les Expressions--</STRONG></I></BIG>
+      <UL>
+	<LI>
+	  <I><STRONG><BIG>Il faut ouvrir tous les fichiers de l'application et implanter
+	  la nouvelle m&eacute;thode (soit abstraite, soit
+	  sp&eacute;cialis&eacute;e)</BIG></STRONG></I>
+      </UL>
+      <P ALIGN=Left>
+	<HR>
+      <SMALL>/* des id&eacute;es... </SMALL>&nbsp; <A HREF="sol.J03.3.html">Q1</A>
+      &nbsp;, &nbsp;<A HREF="sol.J03.3.2.html">Q2 +Q3</A></TD>
+  </TR>
+</TABLE>
+</BODY></HTML>

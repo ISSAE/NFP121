@@ -1,0 +1,424 @@
+<HTML>
+<HEAD>
+  
+  <TITLE>une idee de solution a l'exo J03.2</TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD>/* une id&eacute;e...
+      <P>
+      <P>
+	<HR>
+      Les Classes &nbsp;abstraites : <A HREF="sol.J03.3.2.html#Expression">Expression</A> ,
+      <A HREF="sol.J03.3.2.html#ExpressionBinaire">ExpressionBinaire</A> ,
+      <A HREF="sol.J03.3.2.html#ExpressionUnaire">ExpressionUnaire</A> ,
+      <A HREF="sol.J03.3.2.html#ExpressionConstante">ExpressionConstante</A>
+      <P>
+      Les Classes "concr&egrave;tes" : <A HREF="sol.J03.3.2.html#Addition">Addition</A> ,
+      <A HREF="sol.J03.3.2.html#Soustraction">Soustraction</A> ,
+      <A HREF="sol.J03.3.2.html#Multiplication">Multiplication</A> ,
+      <A HREF="sol.J03.3.2.html#Division">Division</A> , <A HREF="sol.J03.3.2.html#Inverse">Inverse</A> ,
+      <A HREF="sol.J03.3.2.html#Entier">Entier</A> &nbsp; et
+      &nbsp;<A NAME="debut" HREF="sol.J03.3.2.html#TestExprOO">TestExprOO</A>
+      <P>
+	<HR>
+      <PRE>/** vision Objet des expressions enti&egrave;res...
+ * 
+ * @see ExpressionSimple , ExpressionComposee
+ * @author dazy
+ */
+public abstract class <A NAME="Expression">Expression</A> {
+
+  /** Sch&eacute;ma de m&eacute;thode impos&eacute; pour l'&eacute;valuation des expressions
+  */
+  public abstract int eval();
+  
+  /** Sch&eacute;ma de m&eacute;thode impos&eacute; pour l'affichage des expressions
+ */
+  public abstract String toString();
+
+  /** affichage Postfixe sans parenth&egrave;ses des expressions
+ */
+  public abstract String affichagePostFixe();
+  
+  /** affichage PreFixe fonctionnel des expressions
+ */
+  public abstract String affichagePreFixe();
+  
+} /* end class Expression */ <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+<HR>
+/** Expression Binaire :  contient 2 sous expressions
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+public abstract class <A NAME="ExpressionBinaire">ExpressionBinaire</A> extends Expression {
+  /** 2 sous-expressions e1 , e2
+ */
+  public Expression e1 , e2;
+  /** un operateur
+ */
+
+
+  ExpressionBinaire(Expression e1 , Expression e2){
+	  this.e1=e1;
+	  this.e2=e2;
+  }
+
+   /** eval()
+ */
+ abstract public int eval();  
+  
+  /** toString()
+ */
+  abstract public String toString();
+ /** affichage PostFixe sans parenth&egrave;se des expressions
+ */
+  public abstract String affichagePostFixe();
+  
+  /** affichage PreFixe fonctionnel des expressions
+ */
+  public abstract String affichagePreFixe();
+  
+
+} /* end class ExpressionBinaire */ <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+public class <A NAME="Addition">Addition</A> extends ExpressionBinaire {
+
+  Addition(Expression e1 , Expression e2){
+	  super(e1,e2);
+  }
+
+   /** eval()
+ */
+  public int eval() {
+	  return e1.eval() + e2.eval();
+  }  
+  
+  /** toString()
+ */
+  public String toString() {
+	  return "(" +  e1.toString() + " + " + e2.toString() + ")";
+  }
+  /** affichage PostFixe sans parenth&egrave;se des expressions
+  * le moins unaire est repr&eacute;sent&eacute; par _
+  *
+ */
+  public String affichagePostFixe() {
+	  return e1.affichagePostFixe() + e2.affichagePostFixe() + " + ";
+  }
+  /** affichage PreFixe fonctionnel des expressions
+  *
+ */
+  public String affichagePreFixe() {
+	  return "add(" + e1.affichagePreFixe() + " , " + e2.affichagePreFixe() + ")";
+  }
+} /* end class Addition */ <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions et un op&eacute;rateur.
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+public class <A NAME="Soustraction">Soustraction</A> extends ExpressionBinaire {
+
+  Soustraction(Expression e1 , Expression e2){
+	  super(e1,e2);
+  }
+
+   /** eval()
+ */
+  public int eval() {
+	  return e1.eval() - e2.eval();
+  }  
+  
+  /** toString()
+ */
+  public String toString() {
+	  return "(" +  e1.toString() + " - " + e2.toString() +")";
+  }
+  /** affichage PostFixe sans parenth&egrave;se des expressions
+  * le moins unaire est repr&eacute;sent&eacute; par _
+  *
+ */
+  public String affichagePostFixe() {
+	  return e1.affichagePostFixe() + e2.affichagePostFixe() + " - ";
+  }
+  /** affichage PreFixe fonctionnel des expressions
+  *
+ */
+  public String affichagePreFixe() {
+	  return "sous(" + e1.affichagePreFixe() + " , "  + e2.affichagePreFixe() + ")";
+  }
+
+} /* end class Soustraction */ <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions et un op&eacute;rateur.
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+public class <A NAME="Multiplication">Multiplication</A> extends ExpressionBinaire {
+
+  Multiplication(Expression e1 , Expression e2){
+	  super(e1,e2);
+  }
+
+   /** eval()
+ */
+  public int eval() {
+	  return e1.eval() * e2.eval();
+  }  
+  
+  /** toString()
+ */
+  public String toString() {
+	  return "(" + e1.toString() + " * " + e2.toString() + ")";
+  }
+  /** affichage PostFixe sans parenth&egrave;se des expressions
+  * le moins unaire est repr&eacute;sent&eacute; par _
+  *
+ */
+  public String affichagePostFixe() {
+	  return e1.affichagePostFixe() + e2.affichagePostFixe() + " * ";
+  }
+  /** affichage PreFixe fonctionnel des expressions
+  *
+ */
+  public String affichagePreFixe() {
+	  return "mult(" + e1.affichagePreFixe() + " , "  + e2.affichagePreFixe() + ")";
+  }
+
+} /* end class Multiplication */ <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions 
+ * 
+ * @author dazy
+ */
+public class <A NAME="Division">Division</A> extends ExpressionBinaire {
+
+  Division(Expression e1 , Expression e2){
+	  super(e1,e2);
+  }
+
+   /** eval()
+ */
+  public int eval() {
+	  return e1.eval() / e2.eval();
+  }  
+  
+  /** toString()
+ */
+  public String toString() {
+	  return "(" + e1.toString() + " / " + e2.toString() + ")";
+  }
+  /** affichage PostFixe sans parenth&egrave;se des expressions
+  * le moins unaire est repr&eacute;sent&eacute; par _
+  *
+ */
+  public String affichagePostFixe() {
+	  return e1.affichagePostFixe() + e2.affichagePostFixe() + " / ";
+  }
+  /** affichage PreFixe fonctionnel des expressions
+  *
+ */
+  public String affichagePreFixe() {
+	  return "div(" + e1.affichagePreFixe() + " , "  + e2.affichagePreFixe() + ")";
+  }
+
+} /* end class Division */ <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+<HR>
+/** Expression Unaire :  contient 1 sous expression
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+public abstract class <A NAME="ExpressionUnaire">ExpressionUnaire</A> extends Expression {
+  /** 1 sous-expression e
+ */
+  public Expression e ;
+
+  ExpressionUnaire(Expression e){
+	  this.e=e;
+  }
+
+   /** eval()
+ */
+ abstract public int eval();  
+  
+  /** toString()
+ */
+  abstract public String toString();
+ /** affichage PostFixe sans parenth&egrave;se des expressions
+ */
+  public abstract String affichagePostFixe();
+  /** affichage PreFixe fonctionnel des expressions
+ */
+  public abstract String affichagePreFixe();
+  
+
+} /* end class ExpressionUnaire */ <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions 
+ * 
+ * @author dazy
+ */
+public class <A NAME="Inverse">Inverse</A> extends ExpressionUnaire {
+
+  Inverse(Expression e){
+	  super(e);
+  }
+
+   /** eval()
+ */
+  public int eval() {
+	  return -e.eval();
+  }  
+  
+  /** toString()
+ */
+  public String toString() {
+	  return "( -" + e.toString() + ")";
+  }
+  /** affichage PostFixe sans parenth&egrave;se des expressions
+  * le moins unaire est repr&eacute;sent&eacute; par _
+  *
+ */
+  public String affichagePostFixe() {
+	  return e.affichagePostFixe() + " _ ";
+  }
+  /** affichage PreFixe fonctionnel des expressions
+  *
+ */
+  public String affichagePreFixe() {
+	  return "inv(" + e.affichagePreFixe() + ")";
+  }
+
+} /* end class Inverse */ <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+<HR>
+
+/** Expression Simple ou constante
+ * 
+ * @see Expression
+ * @author dazy
+ */
+public abstract class <A NAME="ExpressionConstante">ExpressionConstante</A> extends Expression {
+
+ /** eval()
+ * 
+ * @return int
+ */
+  public abstract int eval();
+  
+  /** toString()
+ * 
+ * @return String
+ */
+  public abstract String toString();
+  /** affichage PostFixe sans parenth&egrave;se des expressions
+ */
+  public abstract String affichagePostFixe();
+
+  /** affichage PreFixe fonctionnel des expressions
+ */
+  public abstract String affichagePreFixe();
+  
+
+} /* end class ExpressionConstante */ <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+<HR>
+
+/** Entier
+ * 
+ * @see Expression
+ * @author dazy
+ */
+public class <A NAME="Entier">Entier</A> extends ExpressionConstante {
+
+  /** une expression Simple est une constante enti&egrave;re : n
+ */
+  public int n;
+
+  //Constructeur
+  public Entier(int n){
+	  this.n=n;
+  }
+
+  /** eval()
+ * 
+ * @return int
+ */
+  public int eval() {
+    return n;
+  } 
+  
+  /** toString()
+ * 
+ * @return String
+ */
+  public String toString() {
+    return "" + n;
+  }
+  /** affichage PostFixe d'une constante n'est pas diff&eacute;rent de toString()
+  *
+ */
+  public String affichagePostFixe() {
+    return "" + n + " ";
+  }
+  /** affichage PreFixe fonctionnel des expressions
+  *
+ */
+  public String affichagePreFixe() {
+    return "" + n;
+  }
+
+} /* end class Entier */ <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+<HR>
+ 
+
+
+/** 
+ *
+ * @author  dazy
+ * @version 
+ */
+public class <A NAME="TestExprOO">TestExprOO</A> {
+
+  /**
+  * @param args the command line arguments
+  */
+  public static void main (String args[]) {
+    /** expression 1+2*(-5)-3 */
+    Expression e = new Addition(
+		                new Entier(1), 
+                           new Soustraction(
+                           new Multiplication(
+                              new Entier(2) , 
+                              new Inverse(new Entier(5))) , 
+                           new Entier(3)));
+    System.out.println(e.toString() + " = " + e.eval());
+    System.out.println(e.affichagePostFixe() + " = " + e.eval());
+    System.out.println(e.affichagePreFixe() + " = " + e.eval());
+  }
+
+}
+/* c'est tout */  <A HREF="sol.J03.3.2.html#debut"><IMG SRC="http://jfod.cnam.fr/icones/UP.GIF" WIDTH="32" HEIGHT="32"></A>
+
+
+
+
+
+
+
+</PRE>
+    </TD>
+  </TR>
+</TABLE>
+<P>
+</BODY></HTML>

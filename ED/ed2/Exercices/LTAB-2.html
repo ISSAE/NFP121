@@ -1,0 +1,270 @@
+<HTML>
+<HEAD>
+  <TITLE>implanter les listes point&eacute;es par une structure de donn&eacute;es
+  r&eacute;cursive</TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD><BIG>Exercice n&#176; 2</BIG>: <BIG><BIG>implanter les listes point&eacute;es
+      par une structure de donn&eacute;es r&eacute;cursive</BIG></BIG>
+      <P>
+      squelette &agrave; compl&eacute;ter du code de ListeP_Rec :
+      <P>
+      <TABLE BORDER CELLPADDING="2">
+	<CAPTION>
+	  ListeP_Rec
+	</CAPTION>
+	<TR>
+	  <TD><PRE>import java.util.*;
+/**
+ * D&eacute;crivez votre classe ListeP_Rec ici.
+ * 
+ * @author TD NFP121
+ * @version v0.0
+ */
+public  class ListeP_Rec implements ListePointInterface
+{    
+        private int lg;
+        private Maillon elem;
+       
+    /**
+     * retourne la valeur du premier &eacute;l&eacute;ment de la liste sans destruction
+     * remarque :  on ne peut pas obtenir la t&ecirc;te d'une liste vide
+     */ 
+    public  Object car(){
+        return elem.valeur();
+    }
+    
+    /**
+     * supprime la tete de la liste
+     * remarque :  on ne peut pas supprimer la t&ecirc;te d'une liste vide
+     */
+    public  void cdr() {  
+        elem=elem.suite();
+        lg--;
+    }
+    /**
+     * ajoute 'obj' au d&eacute;but de la liste;
+     * la longueur de la liste est augment&eacute;e de 1
+     */
+    public  void cons(Object obj){
+                /* 
+                 *&agrave; compl&eacute;ter...
+                 */
+    }
+    /**
+     * ajoute en fin de liste la liste 'liste'
+     */
+    public  void conc(ListePointInterface liste ){
+                /* 
+                 *&agrave; compl&eacute;ter...
+                 */
+    }
+
+    /**
+     * retourne 'this'
+     */
+    public  void renverse()  {
+                /* 
+                 *&agrave; compl&eacute;ter...
+                 */
+    }
+    
+    /**
+     *'objet' appartient-il &agrave; la liste ?
+     */   
+    public  boolean membre(Object objet){
+                /* 
+                 *&agrave; compl&eacute;ter...
+                 */
+                return false;
+    }
+    public  boolean listeVide(){
+        return lg==0;
+    }
+    public  int longueur(){
+        return lg;
+    }
+    
+    public String toString(){
+                /* 
+                 *&agrave; compl&eacute;ter...
+                 */
+                return null;
+    } 
+    
+     public boolean  equals(Object obj){
+         if(!(obj instanceof ListePointInterface)) return false;
+                /* 
+                 *&agrave; compl&eacute;ter...
+                 */
+                return false;
+     }
+
+/*
+ * on va avoir besoin d'&eacute;num&eacute;rer les &eacute;l&eacute;ments d'une chaine de maillons
+ * et on choisit pour cela un iterator implant&eacute; au moyen d'une classe anonyme
+ * cf. ci dessous...
+ */                      
+        public Iterator&lt;Object&gt; iterator(){
+        return new Iterator&lt;Object&gt;(){
+            Maillon temp=elem;
+            public boolean hasNext(){
+                /* 
+                 *&agrave; compl&eacute;ter...
+                 */
+                return false;
+               }
+               public Object next(){
+                /* 
+                 *&agrave; compl&eacute;ter...
+                 */
+                   return null;
+               }
+               public void remove(){
+                   throw new UnsupportedOperationException();
+               }
+           };
+       }
+       /*
+        * ...
+        * 
+        */
+}
+
+</PRE>
+	  </TD>
+	</TR>
+      </TABLE>
+      <P>
+      <BIG><BIG>remarques et rappels :</BIG></BIG>
+      <UL>
+	<LI>
+	  <BIG>car() </BIG>et <BIG>cdr() </BIG>: l'application de ces m&eacute;thodes
+	  sur une liste vide est une erreur il faudra donc pr&eacute;voir de traiter
+	  cette erreur (crash du programme dans tous les cas et il faut cacher &agrave;
+	  l'utilisateur l'impl&eacute;mentation par un tableau..).
+	  <UL>
+	    <LI>
+	      "&agrave; la main"
+	    <LI>
+	      par une lev&eacute;e d'exception (cf. exercice 1 classe
+	      '<BIG>ListeVideException' extends Exception {...} </BIG>)
+	    <LI>
+	      par une instruction <BIG>assert</BIG>
+	  </UL>
+	<LI>
+	  structure de donn&eacute;es r&eacute;cursive : classe <BIG>Maillon
+	  </BIG>&nbsp;(cf. cours)<BR>
+	  <TABLE BORDER CELLPADDING="2">
+	    <CAPTION>
+	      <BIG>sqel. classe <BIG>Maillon</BIG></BIG>
+	    </CAPTION>
+	    <TR>
+	      <TD><PRE>
+/**
+ * 
+ * @author TD NFP121
+ * @version v 0.007
+ */
+
+ class Maillon implements Iterable{
+    private Object valeur;
+    private Maillon suite;
+    /**
+     * cr&eacute;ation d'un nouveau maillon i.e. il est tout seul sans 'suite' (null)
+     */
+    public Maillon(Object valeur){
+    this.valeur=valeur;
+    this.suite=null;
+    }
+    /**
+     * ajout d'un nouveau maillon devant une chaine existante par la
+     * cr&eacute;ation d'un nouveau maillon qui est 'accroch&eacute;' &agrave; la chaine existante...
+     */
+    public Maillon(Object valeur,Maillon suite){
+        this.valeur=valeur;
+        this.suite=suite;
+    }
+
+    public Object valeur(){
+        return valeur;
+    }
+    public Maillon suite(){
+        return suite;
+    }
+    public void modifSuite(Maillon m){
+        suite=m;
+    }
+    
+    public boolean equals(Object that){
+        /* 
+         * &agrave; compl&eacute;ter
+         */
+        return false;
+     }
+
+    public String toString(){
+        /* 
+         * &agrave; compl&eacute;ter
+         */
+        return "";
+    }
+/*
+ * on va avoir besoin d'&eacute;num&eacute;rer les &eacute;l&eacute;ments d'une chaine de maillons
+ * et on choisit pour cela un iterator implant&eacute; au moyen d'une classe anonyme
+ * cf. ci dessous...
+ */           
+     public java.util.Iterator iterator(){
+        return new java.util.Iterator(){            
+            Maillon temp=new Maillon(valeur , suite);
+            public boolean hasNext(){
+                /* 
+                 *&agrave; compl&eacute;ter...
+                 */
+                return false;
+               }
+               public Object next(){
+                /* 
+                 *&agrave; compl&eacute;ter...
+                 */
+                   return null;
+               }
+               public void remove(){// non impl&eacute;ment&eacute;
+                   throw new UnsupportedOperationException();
+               }
+           };
+       }
+    }
+</PRE>
+	      </TD>
+	    </TR>
+	  </TABLE>
+	<LI>
+	  ATTENTION aux parcours de la donn&eacute;e r&eacute;cursive Maillon ATTENTION
+	  aux destructions...
+	<LI>
+	  pour <BIG>membre</BIG> et <BIG>equals</BIG> bien poser le probl&egrave;me
+	  et si il &nbsp;est trop compliqu&eacute; attendre les listes
+	  g&eacute;n&eacute;riquespour une solution robuste.
+	<LI>
+	  enfin ajouter un "iterator" &agrave; la classe pour pouvoir &eacute;num&eacute;rer
+	  les &eacute;l&eacute;ments de la liste. l'ent&ecirc;te de la classe devient
+	  lors : <BR>
+	  <BIG>public class ListeP_Rec implements ListePointInterface , Iterable</BIG>
+	<LI>
+	  la classe <BIG>Maillon</BIG> peut &ecirc;tre une classe interne de la classe
+	  <BIG>ListeP_Rec</BIG>. elle sera alors <BIG>private</BIG>...
+      </UL>
+      <P>
+      <BIG><BIG><BIG>tests</BIG></BIG></BIG> :
+      <P>
+      <BIG>developper avec Bluej une classe de tests (pertinents) couvrant tous
+      les cas particuliers et g&eacute;n&eacute;raux que vous "voyez"</BIG>
+      <P>
+    </TD>
+  </TR>
+</TABLE>
+</BODY></HTML>

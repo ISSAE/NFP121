@@ -1,0 +1,181 @@
+<HTML>
+<HEAD>
+  <TITLE>une idee J03.4</TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD><SMALL>/* une id&eacute;e</SMALL>
+      <P>
+	<HR>
+      <PRE>/** 
+ *
+ * @author  MR DAZY
+ * @version 1.0
+ */
+
+<BIG><BIG><STRONG>public abstract interface Visiteur{</STRONG></BIG></BIG>
+  public abstract Object visiteEntier(Entier n);
+  public abstract Object visiteInverse(Inverse i);
+  public abstract Object visiteAddition(Addition a);
+  public abstract Object visiteSoustraction(Soustraction s);
+  public abstract Object visiteMultiplication(Multiplication m);
+  public abstract Object visiteDivision(Division d);
+  public abstract Object visiteSuccesseur(Successeur s);
+  public abstract Object visitePredecesseur(Predecesseur p);
+}
+<HR>
+/** 
+ *
+ * @author  MR DAZY
+ * @version 1.0
+ */
+<BIG><BIG><STRONG>public class VisiteurParDefaut implements Visiteur{</STRONG></BIG></BIG>
+  public Object visiteEntier(Entier n)                {return n;}
+  public Object visiteInverse(Inverse i)              {return i;}
+  public Object visiteAddition(Addition a)            {return a;}
+  public Object visiteSoustraction(Soustraction s)    {return s;}
+  public Object visiteMultiplication(Multiplication m){return m;}
+  public Object visiteDivision(Division d)            {return d;}
+  public Object visiteSuccesseur(Successeur s)          {return s;}
+  public Object visitePredecesseur(Predecesseur p)      {return p;}
+}
+<HR>
+/*
+ * VisiteurEvaluation.java
+ *
+ * @author  MR DAZY
+ * @version 1.0
+ */
+<BIG><BIG><STRONG>public class VisiteurEvaluation extends VisiteurParDefaut {</STRONG></BIG></BIG>
+
+  public Object visiteEntier(Entier n){
+    return new Integer(n.n);
+  }
+  public Object visiteInverse(Inverse i){
+    return new Integer(-evalExpr(i.e));
+  }
+ 
+  public Object visiteAddition(Addition a){
+    return new Integer(evalExpr(a.e1)+evalExpr(a.e2)) ;
+  }
+  public Object visiteSoustraction(Soustraction s){
+    return new Integer(evalExpr(s.e1)-evalExpr(s.e2)) ;
+  }   
+  public Object visiteMultiplication(Multiplication m){
+    return new Integer(evalExpr(m.e1)*evalExpr(m.e2)) ;
+  } 
+  public Object visiteDivision(Division d){
+    return new Integer(evalExpr(d.e1)/evalExpr(d.e2)) ;
+  } 
+  public Object visiteSuccesseur(Successeur s){
+    return new Integer(evalExpr(s.e)+1) ;
+  } 
+  public Object visitePredecesseur(Predecesseur p){
+    return new Integer(evalExpr(p.e)-1) ;
+  } 
+
+  /**
+   * methodes de service
+  */
+   public int evalExpr(Expression e){
+    Visiteur v = new VisiteurEvaluation();
+    return ((Integer)e.accept(v)).intValue();
+  }
+}
+
+<HR>
+
+/** vision Objet des expressions enti&egrave;res...
+ * 
+ * @see ExpressionSimple , ExpressionComposee
+ * @author dazy
+ */
+<BIG><BIG><STRONG>public abstract class Expression {</STRONG></BIG></BIG>
+
+  /** Sch&eacute;ma de m&eacute;thode impos&eacute; pour l'&eacute;valuation des expressions
+  */
+  /** toutes les actions sur les feuilles de la structure
+  * sont regroup&eacute;es dans les visiteurs
+  */
+  public abstract Object accept(Visiteur v);
+  
+} /* end class Expression */
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+<BIG><BIG><STRONG>public class Addition extends ExpressionBinaire {</STRONG></BIG></BIG>
+
+  Addition(Expression e1 , Expression e2){
+	  super(e1,e2);
+  }
+  /** toutes les actions sur les feuilles de la structure
+  * sont regroup&eacute;es dans les visiteurs
+  */
+  public Object accept(Visiteur v){
+    return v.visiteAddition(this);
+  } 
+} /* end class Addition */
+<HR>
+/*
+ * Successeur.java
+ *
+ * @author  MR DAZY
+ * @version 1.0
+ */
+<BIG><BIG><CODE><STRONG>public class Successeur extends ExpressionUnaire {</STRONG></CODE></BIG></BIG>
+
+  /** Creates new Suc */
+  public Successeur(Expression e) {
+	  super(e);
+  }
+
+  /** toutes les actions sur les feuilles de la structure
+  * sont regroup&eacute;es dans les visiteurs
+  */
+  public Object accept(Visiteur v){
+    return v.visiteSuccesseur(this);
+  } 
+} /* end class Successeur */
+<HR>
+/*
+ * <A NAME="simplif">VisiteurSimplication</A>.java
+ *
+ * @author  MR DAZY
+ * @version 1.0
+ */
+<BIG><BIG><CODE><STRONG>public class VisiteurSimplication extends VisiteurParDefaut {</STRONG></CODE></BIG></BIG>
+ 
+  public Object visiteAddition(Addition a){
+    if ((a.e1 instanceof Entier) &amp;&amp; (((Entier)a.e1).n == 1)){
+      return new Successeur(a.e2);
+    }else{
+      if ((a.e2 instanceof Entier) &amp;&amp; (((Entier)a.e2).n == 1)){
+        return new Successeur(a.e1);
+      }else{return a;}
+    }
+  }
+  public Object visiteSoustraction(Soustraction s){
+    if ((s.e1 instanceof Entier) &amp;&amp; (((Entier)s.e1).n == 1)){
+      return new Predecesseur(s.e2);
+    }else{
+      if ((s.e1 instanceof Entier) &amp;&amp; (((Entier)s.e1).n == 1)){
+        return new Predecesseur(s.e1);
+      }else{return s;}
+    }
+  }
+}
+
+
+</PRE>
+    </TD>
+  </TR>
+</TABLE>
+<CENTER>
+  <P ALIGN=Left>
+</CENTER>
+</BODY></HTML>

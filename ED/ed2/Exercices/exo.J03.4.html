@@ -1,0 +1,103 @@
+<HTML>
+<HEAD>
+  <TITLE>exo 4 s&eacute;ance J03</TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD><BIG>Exercice n&#176; 4</BIG> :
+      <P>
+      En conclusion de l'exercice pr&eacute;c&eacute;dent, on a vu que pour ajouter
+      une nouvelle m&eacute;thode aux expressions il faut ouvrir tous les fichiers
+      de l'application. Ces fichiers sont d&eacute;j&agrave; au nombre de 10. Cette
+      manipulation peut &ecirc;tre source d'erreurs.
+      <P>
+      L'id&eacute;e est alors de n'avoir &agrave; cr&eacute;er qu'une classe pour
+      l'ajout d'une m&eacute;thode. Cette nouvelle classe est appel&eacute;e
+      'visiteurXX'. Elle contient les diff&eacute;rentes implantations
+      sp&eacute;cialis&eacute;es pour toutes les classes de l'application. La classes
+      de l'application ont acc&egrave;s &agrave; ces m&eacute;thodes par une seule
+      et unique m&eacute;thode 'accept(Visiteur v)'
+      <P>
+      donc
+      <OL>
+	<LI>
+	  regrouper les diff&eacute;rentes familles d'actions dans une classe par famille.
+	<LI>
+	  Classes implantent toutes unem&ecirc;me interface : Visiteur
+	<LI>
+	  &nbsp;L'implantation des visites est syst&eacute;matique, par exemple pour
+	  la Soustraction :<BR>
+	  <BIG>public Object accept(Visiteur v){ <BR>
+	  &nbsp;&nbsp;&nbsp;&nbsp;return v.visiteSoustraction(this); <BR>
+	  }<BIG> </BIG></BIG>
+      </OL>
+      <P>
+      D'o&ugrave; l'id&eacute;e de se servir du <BIG><BIG>pattern
+      visiteur</BIG></BIG> &nbsp;de
+      <P>
+      * Design Patterns &nbsp;-- &nbsp;Catalogue de mod&egrave;les de conception
+      reutilisables<BR>
+      * Erich Gamma, Richard Helm, Ralph Johnson et John Vlissides<BR>
+      * Thomson Publishing, 1995. ou <BIG><I>Gang of Four &nbsp;ou</I>
+      GoF95&nbsp;</BIG>
+      <P>
+      <TABLE BORDER CELLPADDING="2">
+	<TR>
+	  <TD><I>Ils affirment : "Le Visiteur fait la repr&eacute;sentation d'une
+	    op&eacute;ration applicable aux &eacute;l&eacute;ments d'une structure d'objet.
+	    Il permet de d&eacute;finir une nouvelle op&eacute;ration, sasns qu'il soit
+	    n&eacute;cessaire de modifier la classe des &eacute;l&eacute;ments sur lesquels
+	    elle agit" </I></TD>
+	</TR>
+      </TABLE>
+      <P>
+      <BIG><BIG> 
+	<HR>
+      Question <A HREF="sol.J03.4.html">1 </A>: </BIG></BIG>Donner une implantation
+      Java du sch&eacute;ma pour la famille d'actions :
+      <P>
+      <IMG SRC="visiteur.gif" WIDTH="537" HEIGHT="417">
+      <P>
+      <I>La classe <BIG>'VisiteurParDefaut'</BIG> est une classe concr&ecirc;te
+      qui implante l'interface <BIG>'visiteur' </BIG>et qui correspond &agrave;
+      l'action 'Ne-Rien-Faire'.<BR>
+      Ainsi les diff&eacute;rentes classes effectives de visiteurs ne sont pas
+      contraintes d'implanter tous les visiteurs...</I>
+      <P>
+      <BIG>Quelles conclusions ?</BIG> 
+	<HR>
+      <P>
+      Si on ajoute une classe d'objet on retrouve la complexit&eacute;
+      pr&eacute;c&eacute;dente (au niveau des visiteurs toutefois...)
+      <P>
+      <BIG><BIG>Question <A HREF="sol.J03.4.html#succ">2</A> : </BIG></BIG>Ajouter
+      deux op&eacute;rateurs unaires dans les expressions, le Successeur (classe
+      Suc) et le pr&eacute;d&eacute;cesseur (classe Pre)<BR>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Ces Op&eacute;rateurs seront respectivement
+      not&eacute; $ pour Suc &nbsp;et &#163; pour Pre.<BR>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; ATTENTION : &nbsp;il faut &eacute;crire
+      <CODE><STRONG>visiteSuccesseur</STRONG></CODE> et
+      <CODE><STRONG>visitePredecesseur</STRONG></CODE> pour tous les visiteurs
+      <P>
+      <BIG>Quelles conclusions ?</BIG>
+      <P>
+      <BIG><BIG>Question <A HREF="sol.J03.4.html#simplif">3</A>:
+      </BIG></BIG>Ajouter un visiteur de simplification (VisiteurSimplification)
+      des expressions qui remplace &nbsp;'e+1' par e$ &nbsp;et &nbsp;'e-1' par
+      e&#163;<BR>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+      <P>
+      <BIG>Quelles conclusions ?</BIG>
+      <P>
+	<HR>
+      <SMALL>/* une <A HREF="sol.J03.4.html">id&eacute;e</A>...</SMALL></TD>
+  </TR>
+</TABLE>
+<CENTER>
+</CENTER>
+</BODY></HTML>
