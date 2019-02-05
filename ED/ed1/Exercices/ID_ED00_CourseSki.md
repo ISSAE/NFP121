@@ -4,30 +4,30 @@ titre: une id&eacute;e Course de ski
 
 <SMALL>/* une id&eacute;e... &nbsp;</SMALL>
 
-note : &nbsp;les Objets en <font ColOR="#ff0000">ROUGE</font> et les actions
-en <font ColOR="#008000">VERT</font> et en italique<BR>
+note : &nbsp;les Objets en <span class="red">ROUGE</span> et les actions
+en <span class="green">VERT</span> et en italique<BR>
   <hr>
 
-<big>Soit d&eacute;velopper une application pour le suivi d'une
-<font color="#ff0000"><big>course</big></font> de Ski. </big>
+Soit d&eacute;velopper une application pour le suivi d'une
+<span class="red">course</span> de Ski. 
 
-<big>Il faut, pour cela, tout d'abord
-<font ColOR="#008000"><big><i>inscrire</i></big></font> les
-<font ColOR="#ff0000"><big><big>concurrents</big></big></font> en relevant
-leur <font ColOR="#ff0000"><big>identit&eacute;</big></font> (nom, pr&eacute;noms,
-nationalit&eacute;) et en leur attribuant un num&eacute;ro de dossard. </big>
+Il faut, pour cela, tout d'abord
+<span class="green">_inscrire_</span> les
+<span class="red">concurrents</span> en relevant
+leur <span class="red">identit&eacute;</span> (nom, pr&eacute;noms,
+nationalit&eacute;) et en leur attribuant un num&eacute;ro de dossard. 
 
-<big>Cette phase d'inscription termin&eacute;e, la course commence
-Il faut alors <font ColOR="#008000"><big><I>lancer</I></big></font> les
+Cette phase d'inscription termin&eacute;e, la course commence
+Il faut alors <span class="green">_lancer_</span> les
 d&eacute;parts dans l'ordre des dossards, relever les
-<font ColOR="#ff0000"><big>temps</big></font> (secondes, centi&egrave;mes)
-des concurrents <font ColOR="#ff0000"><big>NON-&eacute;limin&eacute;s
-</big></font>(qui ont effectivement pass&eacute; la ligne d'arriv&eacute;e
-...) et <font ColOR="#008000"><big><I>afficher</I></big></font> "en temps
-r&eacute;el" le <font ColOR="#ff0000"><big>classement</big></font> de ces
+<span class="red">temps</span> (secondes, centi&egrave;mes)
+des concurrents <span class="red">NON-&eacute;limin&eacute;s
+</span>(qui ont effectivement pass&eacute; la ligne d'arriv&eacute;e
+...) et <span class="green">_afficher_</span> "en temps
+r&eacute;el" le <span class="red">classement</span> de ces
 concurrents avec leurs noms et leurs temps suivi dans le classement des
-"<font ColOR="#ff0000"><big>Elimin&eacute;s"</big></font> la mention
-"&eacute;limin&eacute;".</big>
+"<span class="red">Elimin&eacute;s"</span> la mention
+"&eacute;limin&eacute;".
 
 
 Remarques :
