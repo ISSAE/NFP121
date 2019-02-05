@@ -1,8 +1,7 @@
 ---
-titre: une id&eacute;e Course de ski
+titre: une id&eacute;e Course de ski une indication de solution
 ---
 
-/* une id&eacute;e... &nbsp;
 
 note : &nbsp;les Objets en <code class="red">ROUGE</code> et les actions
 en <code class="green">VERT</code> et en italique<BR>
@@ -31,23 +30,19 @@ concurrents avec leurs noms et leurs temps suivi dans le classement des
 
 
 Remarques :
-<ol>
-  <li>
-    nom , pr&eacute;noms , nationalit&eacute; , secondes , centi&egrave;mes ,
+* nom , pr&eacute;noms , nationalit&eacute; , secondes , centi&egrave;mes ,
     num&eacute;ro de dossard correspondent plut&ocirc;t &agrave; des noms d'attributs
-  <li>
-    ...
-</ol>
+* ...
 
-  <hr>
-Diagrammes de classes : (construits &agrave; l'aide de l'outil Argo UML :
-<a HREF="https://www.modelio.org/">Modélio Open Source</A>) :
+<hr />
+
+Diagrammes de classes : (construits &agrave; l'aide de l'outil Modelio UML et BMP:  [Modélio Open Source](https://www.modelio.org/)
 
 ![UML Modélio](courseSki.png)
 
 <hr />
 
-[retour](.)
+[retour](ED00_CourseSki)
 
 
 
