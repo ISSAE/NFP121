@@ -2,7 +2,7 @@
 titre: une id&eacute;e Course de ski
 ---
 
-<SMALL>/* une id&eacute;e... &nbsp;</SMALL>
+/* une id&eacute;e... &nbsp;
 
 note : &nbsp;les Objets en <code class="red">ROUGE</code> et les actions
 en <code class="green">VERT</code> et en italique<BR>
