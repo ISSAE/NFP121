@@ -1,13 +1,6 @@
 ---
-titre: exo n&#176; 2 ED00 static
+titre: exo n&#176;2 static?
 ---
-
-<center>
-Exercice n&#176; 2
-Static ?
-</center>
-
-
 
 **QUESTION 1** : Construire une classe de nom "CompteurInstance" qui contient
 une m&eacute;thode qui retourne le nombre d'instances de la classe &agrave;
@@ -25,21 +18,8 @@ suggestions :
 * la m&eacute;thode doit-elle &ecirc;tre aussi "static" ?
 
 
-<table border cellpadding="2">
-<tr>
-<td> 
 
-**classe "CompteurInstance"** 
-
-</td>
-<td> 
-
-**classe "CompteurInstanceTest"** 
-
-</td>
-</tr>
-<tr>
-<td>
+# classe "CompteurInstance"
 
 ```java		
 public class CompteurInstance
@@ -69,7 +49,8 @@ public class CompteurInstance
 	}
 }
 ```
-</td><td>
+
+# classe "CompteurInstanceTest"
 
 ```java
 public class CompteurInstanceTest extends junit.framework.TestCase
@@ -95,9 +76,6 @@ public class CompteurInstanceTest extends junit.framework.TestCase
 	}
 }
 ```
-
-</td></tr>
-</table>
 
 <hr/>
 

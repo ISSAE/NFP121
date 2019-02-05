@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Carre
+comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ Carre\ ici.\r\n\r\n\ @author\ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment1.params=l
+comment1.target=Carre(int)
+comment1.text=\r\n\ Constructeur\ Carre\r\n\ @param\ l\ \:\ talle\ du\ cot\u00E9\r\n
+comment2.params=
+comment2.target=double\ surface()
+comment3.params=
+comment3.target=java.lang.String\ jeSuis()
+numComments=4
