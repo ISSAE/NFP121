@@ -1,37 +1,37 @@
-<HTML>
-<HEAD>
-  <TITLE>exo n&#176; 2 ED00 static</TITLE>
-</HEAD>
-<BODY BGCOLOR="#64E9A6">
-<CENTER>
-  <BIG>Exercice n&#176; 2</BIG><BR>
-  <BIG><BIG>Static ?</BIG></BIG><BR>
-    <HR>
-</CENTER>
-<P>
-<BIG>QUESTION 1 : Construire une classe de nom "CompteurInstance" qui contient
+---
+titre: exo n&#176; 2 ED00 static
+---
+
+<center>
+Exercice n&#176; 2
+Static ?
+</center>
+
+
+
+**QUESTION 1** : Construire une classe de nom "CompteurInstance" qui contient
 une m&eacute;thode qui retourne le nombre d'instances de la classe &agrave;
-tout moment d'une session Java.</BIG>
-<P>
-<BIG>QUESTION 2 : sous Bluej cr&eacute;er une classe de test permettant de
-v&eacute;rifier le bon fonctionnement du compteur. </BIG>
-<P>
-<BIG>suggestions : </BIG>
-<UL>
-  <LI>
-    une solution simple est d'utiliser une variable static, donc qui sera
+tout moment d'une session Java.
+
+**QUESTION 2** : sous Bluej cr&eacute;er une classe de test permettant de
+v&eacute;rifier le bon fonctionnement du compteur. 
+
+suggestions : 
+
+* une solution simple est d'utiliser une variable static, donc qui sera
     partag&eacute;es par toutes les instances de la classe et qui sera
     incr&eacute;ment&eacute;es dans le(s) constructeur(s).
-  <LI>
-    ATTENTION, cette variable "static" ne doit pas &ecirc;tre accessible.
-  <LI>
-    la m&eacute;thode doit-elle &ecirc;tre aussi "static" ?
-</UL>
-<P>
+* ATTENTION, cette variable "static" ne doit pas &ecirc;tre accessible.
+* la m&eacute;thode doit-elle &ecirc;tre aussi "static" ?
+
+
 <TABLE BORDER CELLPADDING="2">
   <TR>
-    <TD><BIG>classe "CompteurInstance"</BIG></TD>
-    <TD><PRE>public class CompteurInstance
+    <TD>classe "CompteurInstance"</TD>
+    <TD>
+
+```java		
+public class CompteurInstance
 {
 	// variables d'instance - remplacez l'exemple qui suit par le v&ocirc;tre
 	private static int nbInstances=0;
@@ -62,13 +62,14 @@ v&eacute;rifier le bon fonctionnement du compteur. </BIG>
 		return nbInstances;
 	}
 }
+```
+</TD></TR>
+<TR>
+    <TD>classe "CompteurInstanceTest"</TD>
+    <TD>
 
-</PRE>
-    </TD>
-  </TR>
-  <TR>
-    <TD><BIG>classe "CompteurInstanceTest"</BIG></TD>
-    <TD><PRE>public class CompteurInstanceTest extends junit.framework.TestCase
+```java
+public class CompteurInstanceTest extends junit.framework.TestCase
 {
 
     /**
@@ -91,17 +92,10 @@ v&eacute;rifier le bon fonctionnement du compteur. </BIG>
 		assertEquals(compteur2.voirNbInstances(), CompteurInstance.statVoirNbInstances());
 	}
 }
-
-
-</PRE>
-    </TD>
-  </TR>
+```
+</TD></TR>
 </TABLE>
-<P>
-  <HR>
-<BR>
-retour <A HREF="ED00.2.html">^</A>
-<P>
-<BR>
-<BR>
-</BODY></HTML>
+
+<hr/>
+
+[retour](ED00.2)
