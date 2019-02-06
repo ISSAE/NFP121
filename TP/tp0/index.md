@@ -16,6 +16,8 @@ Après installation vous aurez un gitbash (qui donne un environnement de command
 
 Voici une petite présentation en image:
 
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR4hsKqnQNMa382iRIQf3OMeB8UlcpIPEDWckhoYNScudIC-wEwpDKZ_ldkXxh8m8rULWklnkEzkE_s/embed?start=false&loop=false&delayms=3000" frameborder="0" width="918" height="549" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 
 # compte github
 

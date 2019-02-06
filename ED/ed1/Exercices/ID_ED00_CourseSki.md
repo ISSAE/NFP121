@@ -36,7 +36,7 @@ Remarques :
 
 <hr />
 
-Diagrammes de classes : (construits &agrave; l'aide de l'outil Modelio UML et BMP:  [Modélio Open Source](https://www.modelio.org/)
+Diagrammes de classes : (construits &agrave; l'aide de l'outil Modelio UML et BMP:  [Modélio Open Source](https://www.modelio.org/) vous pouvez aussi ajouter le module génération de code Java [java-designer-open-source](https://store.modelio.org/resource/modules/java-designer-open-source.html)
 
 ![UML Modélio](courseSki.png)
 
