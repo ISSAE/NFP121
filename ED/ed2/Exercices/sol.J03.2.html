@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+  
+  <TITLE>une idee de solution a l'exo J03.2</TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD>/* une id&eacute;e...
+      <PRE>
+
+/** Premi&egrave;re vision Objet des expressions enti&egrave;res...
+ * 
+ * @see ExpressionSimple , ExpressionComposee
+ * @author dazy
+ */
+<BIG><BIG><STRONG>public abstract class Expression {</STRONG></BIG></BIG>
+
+  /** Sch&eacute;ma de m&eacute;thode impos&eacute; pour l'&eacute;valuation des expressions
+  */
+  public abstract int eval();
+  
+  /** Sch&eacute;ma de m&eacute;thode impos&eacute; pour l'affichage des expressions
+ */
+  public abstract String toString();
+
+} /* end class Expression */
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions et un op&eacute;rateur.
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+<BIG><BIG><STRONG>public class ExpressionComposee extends Expression {</STRONG></BIG></BIG>
+  /** 2 sous-expressions e1 , e2
+ */
+  public Expression e1 , e2;
+  /** un operateur
+ */
+  public Operateur o;
+
+  ExpressionComposee(Expression e1 , Operateur o , Expression e2){
+	  this.e1=e1;
+	  this.e2=e2;
+	  this.o=o;
+  }
+
+   /** eval()
+ */
+  public int eval() {
+        switch (o.c) {
+        case  '+' : return e1.eval() + e2.eval();
+        case  '-' : return e1.eval() - e2.eval();
+        case  '*' : return e1.eval() * e2.eval();
+        default   : return e1.eval() / e2.eval();
+          }
+  }  
+  
+  /** toString()
+ */
+  public String toString() {
+        switch (o.c) {
+        case  '+' : return e1.toString() + " + " + e2.toString();
+        case  '-' : return e1.toString() + " - " + e2.toString();
+        case  '*' : return e1.toString() + " * " + e2.toString();
+        default  :  return e1.toString() + " / " + e2.toString();
+          }
+  }
+} /* end class ExpressionComposee */
+<HR>
+
+
+/** Expression Simple ou constante
+ * 
+ * @see Expression
+ * @author dazy
+ */
+<BIG><BIG><STRONG>public class ExpressionSimple extends Expression {</STRONG></BIG></BIG>
+
+  /** une expression Simple est une constante enti&egrave;re : n
+ */
+  public int n;
+
+  //Constructeur
+  public ExpressionSimple(int n){
+	  this.n=n;
+  }
+
+  /** eval()
+ * 
+ * @return int
+ */
+  public int eval() {
+  return n;
+  } 
+  
+  /** toString()
+ * 
+ * @return String
+ */
+  public String toString() {
+  return "" + n;
+  }
+
+} /* end class ExpressionSimple */
+<HR>
+// la classe Operateur est inchang&eacute;e...
+<HR>
+
+ 
+/** 
+ *
+ * @author  dazy
+ * @version 
+ */
+<BIG><BIG><STRONG>public class <A NAME="Test">Test</A>ExprOO1 extends Object {</STRONG></BIG></BIG>
+
+  /**
+  * @param args the command line arguments
+  */
+  public static void main (String args[]) {
+    /** expression 1+2*5-3 */
+    Expression e = new ExpressionComposee(
+		                new ExpressionSimple(1), 
+				new Operateur('+') ,
+                      new ExpressionComposee(
+                          new ExpressionComposee(
+                              new ExpressionSimple(2) , 
+				   new Operateur('*')  ,
+                              new ExpressionSimple(5)) , 
+				new Operateur('-')  ,
+                          new ExpressionSimple(3)));
+    System.out.println(e.toString() + " = " + e.eval());
+  }
+
+}
+</PRE>
+    </TD>
+  </TR>
+</TABLE>
+<P>
+</BODY></HTML>

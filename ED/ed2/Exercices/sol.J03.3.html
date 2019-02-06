@@ -1,0 +1,187 @@
+<HTML>
+<HEAD>
+  
+  <TITLE>une idee de solution a l'exo J03.2</TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD>/* une id&eacute;e...
+      <P>
+      sch&eacute;ma UML :
+      <IMG SRC="ExprOO.gif" WIDTH="477" HEIGHT="364" ALIGN="Middle">
+      <P>
+      Les Classes :
+      <PRE>
+/** vision Objet des expressions enti&egrave;res...
+ * 
+ * @see ExpressionSimple , ExpressionComposee
+ * @author dazy
+ */
+public abstract class Expression {
+
+  /** Sch&eacute;ma de m&eacute;thode impos&eacute; pour l'&eacute;valuation des expressions
+  */
+  public abstract int eval();
+  
+  /** Sch&eacute;ma de m&eacute;thode impos&eacute; pour l'affichage des expressions
+ */
+  public abstract String toString();
+
+} /* end class Expression */
+<HR>
+ExpressionSimple est inchang&eacute;e
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+public abstract class ExpressionComposee extends Expression {
+  /** 2 sous-expressions e1 , e2
+ */
+  public Expression e1 , e2;
+  /** un operateur
+ */
+
+
+  ExpressionComposee(Expression e1 , Expression e2){
+	  this.e1=e1;
+	  this.e2=e2;
+  }
+
+   /** eval()
+ */
+ abstract public int eval();  
+  
+  /** toString()
+ */
+  abstract public String toString();
+} /* end class ExpressionComposee */
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+public class Addition extends ExpressionComposee {
+
+  Addition(Expression e1 , Expression e2){
+	  super(e1,e2);
+  }
+
+   /** eval()
+ */
+  public int eval() {
+	  return e1.eval() + e2.eval();
+  }  
+  
+  /** toString()
+ */
+  public String toString() {
+	  return e1.toString() + " + " + e2.toString();
+  }
+} /* end class Addition */
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions et un op&eacute;rateur.
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+public class Soustraction extends ExpressionComposee {
+
+  Soustraction(Expression e1 , Expression e2){
+	  super(e1,e2);
+  }
+
+   /** eval()
+ */
+  public int eval() {
+	  return e1.eval() - e2.eval();
+  }  
+  
+  /** toString()
+ */
+  public String toString() {
+	  return e1.toString() + " - " + e2.toString();
+  }
+} /* end class Soustraction */
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions et un op&eacute;rateur.
+ * 
+ * @see OtherClasses
+ * @author dazy
+ */
+public class Multiplication extends ExpressionComposee {
+
+  Multiplication(Expression e1 , Expression e2){
+	  super(e1,e2);
+  }
+
+   /** eval()
+ */
+  public int eval() {
+	  return e1.eval() * e2.eval();
+  }  
+  
+  /** toString()
+ */
+  public String toString() {
+	  return e1.toString() + " * " + e2.toString();
+  }
+} /* end class Multiplication */
+<HR>
+/** Expression Compos&eacute;e :  contient 2 sous expressions 
+ * 
+ * @author dazy
+ */
+public class Division extends ExpressionComposee {
+
+  Division(Expression e1 , Expression e2){
+	  super(e1,e2);
+  }
+
+   /** eval()
+ */
+  public int eval() {
+	  return e1.eval() / e2.eval();
+  }  
+  
+  /** toString()
+ */
+  public String toString() {
+	  return e1.toString() + " / " + e2.toString();
+  }
+} /* end class Division */
+<HR>
+
+/** 
+ *
+ * @author  dazy
+ * @version 
+ */
+public class <A NAME="Test">Test</A>ExprOO {
+
+  /**
+  * @param args the command line arguments
+  */
+  public static void main (String args[]) {
+    /** expression 1+2*5-3 */
+    Expression e = new Addition(
+		                new ExpressionSimple(1), 
+                      new Soustraction(
+                          new Multiplication(
+                              new ExpressionSimple(2) , 
+                              new ExpressionSimple(5)) , 
+                          new ExpressionSimple(3)));
+    System.out.println(e.toString() + " = " + e.eval());
+  }
+
+}
+</PRE>
+    </TD>
+  </TR>
+</TABLE>
+<P>
+</BODY></HTML>

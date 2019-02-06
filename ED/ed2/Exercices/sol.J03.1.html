@@ -1,0 +1,184 @@
+<HTML>
+<HEAD>
+  <TITLE>une idee J03.1</TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD><TABLE CELLPADDING="36">
+	<TR>
+	  <TD VALIGN="Top"><TABLE BORDER CELLPADDING="2">
+	      <TR>
+		<TD>&nbsp;Expression</TD>
+	      </TR>
+	      <TR>
+		<TD>Expression e1 , e2;<BR>
+		  Operateur o;</TD>
+	      </TR>
+	      <TR>
+		<TD>int eval()<BR>
+		  String toString()</TD>
+	      </TR>
+	    </TABLE>
+	  </TD>
+	  <TD VALIGN="Top"><TABLE BORDER CELLPADDING="2">
+	      <TR>
+		<TD>Operateur</TD>
+	      </TR>
+	      <TR>
+		<TD>char c</TD>
+	      </TR>
+	      <TR>
+		<TD></TD>
+	      </TR>
+	    </TABLE>
+	  </TD>
+	  <TD VALIGN="Top"><TABLE BORDER CELLPADDING="2">
+	      <TR>
+		<TD>Entier</TD>
+	      </TR>
+	      <TR>
+		<TD>int n</TD>
+	      </TR>
+	      <TR>
+		<TD></TD>
+	      </TR>
+	    </TABLE>
+	  </TD>
+	</TR>
+      </TABLE>
+      <P>
+      <BR>
+      <BR>
+	<HR>
+      <PRE>/** 
+ *
+ * @author  
+ * @version 2000
+ */
+public class Expression extends Object {
+  
+  public Expression e1 , e2;
+  public Operateur o;
+  public Entier valeur;
+
+  /** Les constructeurs ne figurent pas dans les sch&eacute;mas UML
+   *  Ici deux constructeurs pour construire deux sortes d'expressions : 
+   *  -&gt; les expressions compos&eacute;es (&agrave; 3 &eacute;l&eacute;ments : deux sous expressions et un op&eacute;rateur
+   *  -&gt; les Expressions simples : seulement un nombre...
+   *  Attention les deux types d'expressions sont distincts.  */
+  <BIG><STRONG>public Expression(Expression e1 , char o , Expression e2) {</STRONG></BIG>
+<STRONG><BIG>    this.e1 = e1;</BIG></STRONG>
+<STRONG><BIG>    this.e2 = e2;</BIG></STRONG>
+<STRONG><BIG>    this.o = new Operateur(o);</BIG></STRONG>
+<STRONG><BIG>    this.valeur = null;</BIG></STRONG>
+<STRONG><BIG>  }</BIG></STRONG>
+<STRONG><BIG>  public Expression(Entier v) {</BIG></STRONG>
+<STRONG><BIG>    e1 = null;</BIG></STRONG>
+<STRONG><BIG>    e2 = null;</BIG></STRONG>
+<STRONG><BIG>    o = null;</BIG></STRONG>
+<STRONG><BIG>    valeur = v;</BIG></STRONG>
+<STRONG><BIG>  }</BIG></STRONG>
+  
+ /**
+  * eval() m&eacute;thode d'&eacute;valuation
+  *  implante la s&eacute;mantique structurelle d'&eacute;valuation des Expressions...
+  * @return int
+  */
+int eval(){
+    if (valeur != null) { <STRONG>// moyen de distinguer entre expression simple et compos&eacute;e</STRONG>
+      return valeur.intValue();
+      }else{
+        char ope=o.c;
+        switch (ope) {  <STRONG>// Evaluer au moyen du bon op&eacute;rateur...</STRONG>
+        case  '+' : return e1.eval() + e2.eval();
+        case  '-' : return e1.eval() - e2.eval();
+        case  '*' : return e1.eval() * e2.eval();
+        default   : return e1.eval() / e2.eval();
+          }
+       } 
+    }
+    /**
+   * toString m&eacute;thode standard d'affichage
+  *  implante la s&eacute;mantique structurelle d'affichage des Expressions...
+  * @return String
+   */
+ public String toString(){
+    if (valeur != null) {
+      return ""+valeur.n;
+      }else{
+        char ope=o.c;
+        switch (ope) {
+        case  '+' : return e1.toString() + " + " + e2.toString();
+        case  '-' : return e1.toString() + " - " + e2.toString();
+        case  '*' : return e1.toString() + " * " + e2.toString();
+        default  :  return e1.toString() + " / " + e2.toString();
+          }
+       } 
+    }
+}
+<HR>
+/** 
+ *
+ * @author  dazy
+ * @version 2000
+ */
+public class <A NAME="Operateur">Operateur</A> extends Object {
+  
+  public char c;
+
+  /** Creates new Operateur */
+  public Operateur(char c) {
+    this.c=c;
+  }
+  
+}
+<HR>
+/** 
+ *
+ * @author  MR DAZY
+ * @version 2000
+ */
+public class <A NAME="Entier">Entier</A> extends Object {
+  public int n;
+
+  /** Creates new Entier */
+  public Entier(int n) {
+    this.n=n;
+  }
+  
+}
+
+<HR>
+
+/** 
+ *
+ * @author  dazy
+ * @version 
+ */
+public class <A NAME="Test">Test</A>ExprImpe extends Object {
+  /**
+  * @param args the command line arguments
+  */
+  public static void main (String args[]) {
+    /** expression 1+2*5-3/2 */
+    Expression e = new Expression(new Expression(new Entier(1)), '+' ,
+                            new Expression(
+                               new Expression(
+                                 new Expression( new Entier(2)) , '*' ,
+                                   new Expression(new Entier(5))) , '-' ,
+                                    new Expression(new Entier(3))));
+    System.out.println(e.toString() + " = " + e.eval());
+  }
+
+}
+</PRE>
+    </TD>
+  </TR>
+</TABLE>
+<P>
+<BR>
+<BR>
+<BR>
+</BODY></HTML>

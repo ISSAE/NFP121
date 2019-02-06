@@ -84,7 +84,7 @@ public class TestHelloWorld {
 
 Découvrir les objets (classes) et premiers programmes :
 
-[Un Exercice  plus complet](ED00_CourseSki) : la course de ski...
+[Un Exercice  plus complet](Exercices/ED00_CourseSki) : la course de ski...
 
 Remarque :
 

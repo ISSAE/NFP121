@@ -1,0 +1,186 @@
+<HTML>
+<HEAD>
+  <TITLE>implanter les listes point&eacute;es par un tableau</TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD><BIG>Exercice n&#176; 1</BIG> : <BIG><BIG>implanter les listes point&eacute;es
+      par un tableau</BIG></BIG>
+      <P>
+      squellette &agrave; compl&eacute;ter du code de ListeP_Tab :
+      <P>
+      <TABLE BORDER CELLPADDING="2">
+	<CAPTION>
+	  ListeP_Tab
+	</CAPTION>
+	<TR>
+	  <TD><PRE>import java.util.Iterator ;
+/**
+ * D&eacute;crivez votre classe ListeP_T ici.
+ * 
+ * @author (votre nom) 
+ * @version (un num&eacute;ro de version ou une date)
+ */
+public  class ListeP_Tab implements ListePointInterface
+{
+     /**
+      * ATTENTION, ATTENTION,
+      * il est plus facile d'ajouter des objets &agrave; la fin d'un tableau 
+      * qu'au d&eacute;but d'un tableau 
+      * car en ajoutant au d&eacute;but il faudrait &agrave; chaque fois d&eacute;caler tous les &eacute;l&eacute;ments du tableau.
+      * Alors dans le tableau d'implantation 'liste' la t&ecirc;te de liste est le dernier du tableau
+      */  
+     
+    // variables d'instance / attributs 
+    private Object []  tabImplantation;
+    private int nbreElements;  // nombre d'&eacute;l&eacute;ments de la liste, donc on aura toujours nbreElements&lt;=tabImplantation.length
+    
+    public ListeP_Tab(){
+        tabImplantation= new Object [3];  //3 ou n'importe quel autre nombre &gt;0 d'&eacute;l&eacute;ments
+    }
+/**
+ * retourne la t&ecirc;te de la tabImplantation. lecture seulement
+ */
+    public Object car()
+    { 
+        return tabImplantation[nbreElements-1];
+     }
+/**
+ * destruction du premier &eacute;l&eacute;ment de la tabImplantation
+ */
+      public void cdr()
+      { 
+          tabImplantation[nbreElements-1]=null;
+          nbreElements--;     
+       }
+ /**
+  * proc&eacute;dure : ajout d'un objet quelconque en d&eacute;but de tabImplantation
+  */   
+    public void cons(Object objet){ 
+        tabImplantation[nbreElements]=objet;
+        nbreElements++;
+       }
+       /**
+        * proc&eacute;dure : concat&eacute;nation d'une tabImplantation sur 'this'
+        * ATTENTION cette version ne permet que la concat&eacute;nation d'une 'ListeP_Tab'
+        * r&eacute;fl&eacute;chir &agrave; la version g&eacute;n&eacute;rale...
+        */
+    public void conc(ListePointInterface lst ){
+            /*
+             * &agrave; compl&eacute;ter...
+             * 
+             */
+         nbreElements=nbreElements+lst.longueur();
+       }
+/** 
+ * proc&eacute;dure : retouner une tabImplantation sur elle m&ecirc;me
+ */ 
+    public void renverse(){
+        if(nbreElements!=0 &amp; nbreElements!=1){
+        Object[] temp= new Object[nbreElements];
+        for(int i=0 ; i&lt;nbreElements ; i++){
+            temp[i]=tabImplantation[nbreElements-1-i];
+           }
+           tabImplantation=temp;
+       }
+    }
+/**
+ * pr&eacute;dicat : objet est-il membre de la liste ?
+ * ATTENTION &agrave; ne pas comparer n'importe quoi et obtenir "un false silencieux"
+ */
+    public boolean membre(Object objet){
+            /*
+             * &agrave; compl&eacute;ter...
+             * un vrai casse-t&ecirc;te !!!
+             */
+        return false; 
+    }
+    public boolean listeVide(){     
+        return nbreElements==0;
+    }
+    public int longueur(){
+        return nbreElements;
+    }
+    
+// m&eacute;thodes de services "impos&eacute;es" par Java
+        
+    public String toString(){
+        if(nbreElements==0) return "[]";
+        String s="[";
+        for(int i=nbreElements-1 ; i&gt;0 ; i--){
+            s+=tabImplantation[i].toString()+",";
+        }
+        return s+tabImplantation[0]+"]";
+    }    
+
+    public boolean equals(Object liste){
+        if(!(liste instanceof ListePointInterface)){
+            return false;
+        }
+        if(nbreElements!=((ListePointInterface)liste).longueur()){
+            return false;
+        }
+           /*
+            * &agrave; compl&eacute;ter...
+            * avec soin.
+            */
+        return false;
+    }
+
+    
+}
+
+</PRE>
+	  </TD>
+	</TR>
+      </TABLE>
+      <P>
+      <BIG><BIG>remarques et rappels :</BIG></BIG>
+      <UL>
+	<LI>
+	  <BIG>car() </BIG>et <BIG>cdr() </BIG>: l'application de ces m&eacute;thodes
+	  sur une liste vide est une erreur il faudra donc pr&eacute;voir de traiter
+	  cette erreur (crash du programme dans tous les cas et il faut cacher &agrave;
+	  l'utilisateur l'impl&eacute;mentation par un tableau..).
+	  <UL>
+	    <LI>
+	      &agrave; la main
+	    <LI>
+	      par une lev&eacute;e d'exception (cr&eacute;er alors la classe
+	      '<BIG>ListeVideException' extends Exception {...}</BIG>) et modifier l'interface.
+	    <LI>
+	      par une instruction <BIG>assert</BIG>
+	  </UL>
+	<LI>
+	  en java comme dans la plus part des langages la longueur d'un tableau est
+	  fix&eacute;e &agrave; la d&eacute;claration. Or ici les listes sont NON
+	  born&eacute;es donc quand il le faudra il faudra faire "grandir" le tableau
+	  <BIG>tabImplantation</BIG> ou le r&eacute;tr&eacute;cir s'il est devenu trop
+	  grand... pour cela &eacute;tudier la m&eacute;thode <BIG>arraycopy(...)</BIG>
+	  de la classe <BIG>System</BIG>
+	<LI>
+	  la m&eacute;thode <BIG>arraycopy(...)</BIG> de la classe <BIG>System</BIG>
+	  sera aussi utile pour d&eacute;velopper <BIG>conc(ListePointInterface lst
+	  )</BIG>
+	<LI>
+	  pour <BIG>membre</BIG> et <BIG>equals</BIG> bien poser le probl&egrave;me
+	  et si il &nbsp;est trop compliqu&eacute; attendre les listes
+	  g&eacute;n&eacute;riquespour une solution robuste.
+	<LI>
+	  enfin ajouter un "iterator" &agrave; la classe pour pouvoir &eacute;num&eacute;rer
+	  les &eacute;l&eacute;ments de la liste. l'ent&ecirc;te de la classe devient
+	  lors : <BR>
+	  <BIG>public class ListeP_Tab implements ListePointInterface , Iterable</BIG>
+      </UL>
+      <P>
+      <BIG><BIG><BIG>tests</BIG></BIG></BIG> : 
+      <P>
+      <BIG>developper avec Bluej une classe de tests (pertinents) couvrant tous
+      les cas particuliers et g&eacute;n&eacute;raux que vous "voyez"</BIG>
+      <P>
+    </TD>
+  </TR>
+</TABLE>
+</BODY></HTML>

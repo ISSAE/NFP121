@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+  <TITLE>exo 2 s&eacute;ance J03</TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<P ALIGN=Left>
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD><BIG><BIG><BIG>Exercice n&#176; 2 : </BIG></BIG></BIG>Premi&egrave;re
+      vision Objet des Expressions enti&egrave;res.
+      <P>
+      Th&egrave;mes : plusieurs classes , classe abstraite , graphe d'h&eacute;ritage
+      (UML) , Pattern Composite
+      <P>
+	<HR>
+      <P>
+      Dans la syntaxe abstraite :
+      <TABLE BORDER CELLPADDING="2">
+	<TR>
+	  <TD><BIG>1. cat&eacute;gories syntaxiques :</BIG>
+	    <BLOCKQUOTE>
+	      <BIG>e,e1,e2<IMG WIDTH="13" HEIGHT="13" SRC="element.gif">Exp <BR>
+	      o <IMG WIDTH="13" HEIGHT="13" SRC="element.gif">{+ | - | * | /} <BR>
+	      n <IMG WIDTH="13" HEIGHT="13" SRC="element.gif">Entier</BIG>
+	    </BLOCKQUOTE>
+	    <P>
+	    <BIG> 2. d&eacute;finition :</BIG>
+	    <BLOCKQUOTE>
+	      <BIG>e ::= n | e1 o e2</BIG>
+	    </BLOCKQUOTE>
+	  </TD>
+	</TR>
+      </TABLE>
+      <P>
+      n est du type Entier mais la d&eacute;finition le montre comme 'un genre
+      d'expression'.
+      <P>
+      La distinction de deux genres d'expression va permettre de ne plus avoir
+      des expressions et des valeurs m&eacute;l&eacute;es dans les
+      d&eacute;clarations...
+      <P>
+      On obtient le sch&eacute;ma suivant : &nbsp;
+      <IMG SRC="ExprSimpleCompo.gif" WIDTH="374" HEIGHT="254" ALIGN="Middle">
+      <P>
+      <I>Remarques : </I>
+      <UL>
+	<LI>
+	  <I>Les seuls objets concr&ecirc;ts "manipulables" sont des expressions simples
+	  ou des expressions compos&eacute;es.</I>
+	<LI>
+	  <I>Donc, la classe Expression "g&eacute;n&eacute;rale ne doit pas &ecirc;tre
+	  instanciable : &nbsp;elle sera 'abstract'.</I>
+	<LI>
+	  <I>Des m&eacute;thodes eval() et toString() sont impl&eacute;mentables seulement
+	  dans les classes ExprSimple et ExprComposee.<BR>
+	  Elles seront d&eacute;clar&eacute;es abstract et leurs corps ne sera pas
+	  d&eacute;fini.</I>
+	<LI>
+	  <I>e1 et e2 sont bien des expressions au sens g&eacute;n&eacute;ral...</I>
+      </UL>
+      <P>
+      <BIG>Ce sch&eacute;ma de construction d'une structure de donn&eacute;es
+      arborescentes avec diff&eacute;rents type de noeuds possibles est </BIG>
+      <P>
+      <BIG><BIG><STRONG>le pattern COMPOSITE</STRONG></BIG> &nbsp;(cf. GoF95)</BIG>
+      <P>
+	<HR>
+      <BIG>Question &nbsp;1 : &nbsp;Donner une implantation de ces classes</BIG>
+      <P>
+      <BIG>Question 2 : &nbsp;Donner le programme de
+      <A HREF="sol.J03.2.html#Test">test</A> modifi&eacute;.<BR>
+      </BIG> 
+	<HR>
+      <SMALL>/* <A HREF="sol.J03.2.html">une id&eacute;e...</A> </SMALL>
+      <P>
+	<HR>
+      Quelques conclusions :
+      <TABLE BORDER CELLPADDING="2">
+	<TR>
+	  <TD><P ALIGN=Center>
+	    <BIG><BIG><BIG><STRONG>+</STRONG></BIG></BIG></BIG></TD>
+	  <TD><P ALIGN=Center>
+	    <BIG><BIG><BIG><STRONG>-</STRONG></BIG></BIG></BIG></TD>
+	</TR>
+	<TR>
+	  <TD><UL>
+	      <LI>
+		les variables incompatibles sont d&eacute;clar&eacute;es dans des classes
+		diff&eacute;rentes.
+	      <LI>
+		'abstract' permet d'imposer aux feuilles l'implantation de certaines
+		m&eacute;thodes
+	      <LI>
+		l'&eacute;criture des m&eacute;thodes est simplifi&eacute;es : on implante
+		seulement pour un cas pr&eacute;cis
+	    </UL>
+	  </TD>
+	  <TD><UL>
+	      <LI>
+		le nombre de classes i.e. le nombre de fichiers augmente
+	      <LI>
+		l'&eacute;criture des m&eacute;thodes dans ExprComposee est encore complexe.
+	    </UL>
+	  </TD>
+	</TR>
+      </TABLE>
+      <P>
+      <BR>
+    </TD>
+  </TR>
+</TABLE>
+<P ALIGN=Left>
+</BODY></HTML>

@@ -1,0 +1,205 @@
+<HTML>
+<HEAD>
+  <TITLE>exo 1 s&eacute;ance J03 </TITLE>
+</HEAD>
+<BODY bgcolor="#cee0ff">
+<TABLE CELLPADDING="2">
+  <TR>
+    <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    <TD><BIG>Exercice n&#176; 1</BIG> : <BIG>Les Expressions num&eacute;riques
+      (version imp&eacute;rative) </BIG>
+      <P>
+	<HR>
+      <BIG>Syntaxe abstraite </BIG>des expressions enti&egrave;res :
+      <TABLE BORDER CELLPADDING="2">
+	<TR>
+	  <TD>1. cat&eacute;gories syntaxiques :
+	    <BLOCKQUOTE>
+	      e,e1,e2<IMG SRC="element.gif" WIDTH="13" HEIGHT="13">Exp <BR>
+	      o <IMG SRC="element.gif" WIDTH="13" HEIGHT="13">{+ | - | * | /} <BR>
+	      n <IMG SRC="element.gif" WIDTH="13" HEIGHT="13">Entier
+	    </BLOCKQUOTE>
+	    <P>
+	    2. d&eacute;finitions :
+	    <BLOCKQUOTE>
+	      e ::= n | e1 o e2
+	    </BLOCKQUOTE>
+	  </TD>
+	  <TD><TABLE BORDER CELLPADDING="2">
+	      <TR>
+		<TD>les cat&eacute;gories syntaxiques correspondent aux diff&eacute;rents
+		  types d'objets utilis&eacute;s (Classes).
+		  <P>
+		  donc 3 classes &agrave; d&eacute;finir : <CODE><STRONG>Expression , Operateur
+		  , &nbsp;Entier</STRONG></CODE>
+		  <P>
+		</TD>
+	      </TR>
+	      <TR>
+		<TD>Les d&eacute;finitions correspondent, dans la version imp&eacute;rative,
+		  &agrave; la structure d'une expression.
+		  <P>
+		</TD>
+	      </TR>
+	    </TABLE>
+	  </TD>
+	</TR>
+      </TABLE>
+      <P>
+      <BR>
+      <BR>
+	<HR color="#ff00ff">
+      <BR>
+      <BIG>R&egrave;gles d'inf&eacute;rences </BIG>de la s&eacute;mantique
+      d'&eacute;valuation : C'est une sp&eacute;cification de la m&eacute;thode
+      &nbsp;<CODE><STRONG>'int evaluation()'</STRONG></CODE>&nbsp;de la classe
+      <CODE><STRONG>Expression</STRONG></CODE><BR>
+      <TABLE CELLPADDING="2">
+	<TR>
+	  <TD>CR :</TD>
+	  <TD>
+	      <HR noshade color="000000">
+	  </TD>
+	  <TD>n <IMG WIDTH="13" HEIGHT="13" SRC="element.gif"> Entier</TD>
+	</TR>
+	<TR>
+	  <TD></TD>
+	  <TD>&nbsp; &nbsp; n =v=&gt; n &nbsp; &nbsp;</TD>
+	  <TD></TD>
+	</TR>
+      </TABLE>
+      <P ALIGN=Center>
+      <TABLE CELLPADDING="2">
+	<TR>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    &nbsp; &nbsp; e1 =v=&gt; n1 &nbsp; &nbsp; &nbsp; e2 =v=&gt; n2 &nbsp; &nbsp;</TD>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	</TR>
+	<TR>
+	  <TD><P ALIGN=Center>
+	    Op + :</TD>
+	  <TD><P ALIGN=Center>
+	      <HR noshade color="000000">
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    n = n1 + n2</TD>
+	</TR>
+	<TR>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    e1 + e2 =v=&gt; n</TD>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	</TR>
+      </TABLE>
+      <P ALIGN=Center>
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+      <TABLE CELLPADDING="2">
+	<TR>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    &nbsp; &nbsp;e1 =v=&gt; n1&nbsp; &nbsp; &nbsp; e2 =v=&gt; n2 &nbsp; &nbsp;
+	    &nbsp;</TD>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	</TR>
+	<TR>
+	  <TD><P ALIGN=Center>
+	    Op - :</TD>
+	  <TD><P ALIGN=Center>
+	      <HR noshade color="000000">
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    n = n1 - n2</TD>
+	</TR>
+	<TR>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    e1 - e2 =v=&gt; n</TD>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	</TR>
+      </TABLE>
+      <TABLE CELLPADDING="2">
+	<TR>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    &nbsp; &nbsp; e1 =v=&gt; n1 &nbsp; &nbsp; &nbsp; e2 =v=&gt; n2 &nbsp; &nbsp;</TD>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	</TR>
+	<TR>
+	  <TD><P ALIGN=Center>
+	    Op * :</TD>
+	  <TD><P ALIGN=Center>
+	      <HR noshade color="000000">
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    n = n1 * n2</TD>
+	</TR>
+	<TR>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    e1 * e2 =v=&gt; n</TD>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	</TR>
+      </TABLE>
+      <TABLE CELLPADDING="2">
+	<TR>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    &nbsp; &nbsp; e1 =v=&gt; n1 &nbsp; &nbsp; &nbsp; e2 =v=&gt; n2 &nbsp; &nbsp;</TD>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	</TR>
+	<TR>
+	  <TD><P ALIGN=Center>
+	    Op / :</TD>
+	  <TD><P ALIGN=Center>
+	      <HR noshade color="000000">
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    n = n1 / n2</TD>
+	</TR>
+	<TR>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	  <TD><P ALIGN=Center>
+	    e1 / e2 =v=&gt; n</TD>
+	  <TD><P ALIGN=Center>
+	  </TD>
+	</TR>
+      </TABLE>
+      <P>
+	<HR>
+      <BIG>QUESTION 1 : </BIG>A partir de cette s&eacute;mantique donner les
+      sch&eacute;mas UML des classes
+      &nbsp;<CODE><STRONG><A HREF="sol.J03.1.html">Expression</A> ,
+      <A HREF="sol.J03.1.html#Operateur">Operateur</A> ,
+      &nbsp;<A HREF="sol.J03.1.html#Entier">Entier</A></STRONG></CODE><BR>
+      <P>
+      <BIG>QUESTION 2 : </BIG>Implanter ces trois classes en Java.<BR>
+      <I>Remarque : Attention aux constructeurs...</I>
+      <P>
+      <BIG>QUESTION 3 : </BIG>Construire un programme de
+      <A HREF="sol.J03.1.html#Test">test</A> de l'application ci dessus qui
+      &eacute;value l'expression num&eacute;rique 1+2*5-3.
+      <P>
+	<HR>
+      <P>
+      <SMALL><A HREF="sol.J03.1.html">/* une id&eacute;e...</A></SMALL>
+      <P>
+    </TD>
+  </TR>
+</TABLE>
+</BODY></HTML>

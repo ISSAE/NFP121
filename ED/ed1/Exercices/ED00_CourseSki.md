@@ -21,12 +21,12 @@ ces concurrents avec leurs noms et leurs temps suivi dans le classement des
 
 <hr />
 
-QUESTION 1 : &nbsp;rep&eacute;rer dans le texte les substantifs qui
+<b class="red">QUESTION 1</b> : &nbsp;rep&eacute;rer dans le texte les substantifs qui
 correspondront &agrave; des classes en Java et les verbes qui correspondront
 &agrave; des actions (m&eacute;thodes dans les&nbsp;classes en Java
 
 <hr />
-QUESTION 2 : construire le diagramme de classes (java) &agrave; partir
+<b class="green">QUESTION 2 :</b> construire le diagramme de classes (java) &agrave; partir
 des d&eacute;cisions prises en Question 1<BR><BR>
 <hr />
 
