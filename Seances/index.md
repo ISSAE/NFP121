@@ -4,15 +4,15 @@ titre: Programme et références NFP 121 Programmation Avancée 2018-2019
  
 ## Programmes du semestre 2 au Cnam Liban - tous les centres.
 
-1. semaine 18/2/2019 : rappels NFA031,NFA032,NFA035 , utilisation BlueJ et git, github
+1. **Semaine 18/2/2019** : des rappels NFA031,NFA032,NFA035 , utilisation BlueJ et git, github
     * Cours 1 : [Introduction, vocable, les essentiels](https://nfp121.page.link/1) : Classes, instances, visibilité, héritage, spécialisation, surcharge 
     * Cours 2 : [Une Classe, et les aspects impératifs du langage](https://nfp121.page.link/2) : Classes abstraites, interfaces, classes internes, classes anonymes,
 méthodes, passage de paramètres, instructions, exceptions, assertions
     * préparer L'[environnement de développement](/NFP121/TP/tp0/) pour NFP121 et faire [le premier TP TP1](/NFP121/TP/tp1/tp1)
-    * [Premier ED/TP](ED/ed1/)
+    * [Premier ED/TP](/NFP121/ED/ed1/)
 
-3.  semaine 25/2/2019 
-    * Cours 3 : Interfaces, plusieurs Classes, introduction au "Design Pattern" Héritage, liaison dynamique, paquetages, 
+3.  **Semaine 25/2/2019**
+    * Cours 3 : des rappels NFA031,NFA032,NFA035: Interfaces, plusieurs Classes, Héritage, liaison dynamique, paquetages. Et  introduction au "Design Pattern" 
     * Cours 4 : Design Pattern : les fondamentaux, Les patrons Adaptateur et Procuration
 
 4. 1 xxx Quelques Patrons et programmation évènementielle
