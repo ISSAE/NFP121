@@ -1,5 +1,5 @@
 ---
-titre: TD00/01: Intro à la POO + java "impératif"
+titre: Intro à la POO + java "impératif"
 ---
 
 pour ce premier TD/TP en présentiel je vous monterais ce qu'il faut faire sur le PC de l'enseignant. En plus de devoir installer les logiciels et outils nécessaires; vous devrez écrire et exécuter les programmes pour que les exercices soient profitables (ne vous contenter pas de copier/coller et de lire ce document!).

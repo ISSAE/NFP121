@@ -1,4 +1,4 @@
-theme: jekyll-theme-architect
+remote_theme: ISSAE/architect
 
 name: Programmation Avancée 
 
@@ -10,6 +10,9 @@ title: Programmation Avancée et Patron de conception en Java
 
 google_analytics: UA-29708002-2
 
+repository: ISSAE/NFP121
+
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
