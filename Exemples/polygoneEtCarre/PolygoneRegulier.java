@@ -1,13 +1,11 @@
 import java.lang.Math;
 /**
  * Polygone Regulier
- *
  * @author Pascal Fares
  * @version 0.1
  */
 public class PolygoneRegulier
 {
-    // variables d'instance
     /**
      * La lobgueur d'un coté
      */
@@ -18,6 +16,14 @@ public class PolygoneRegulier
     private int nombreDeCotes;
 
     /**
+     * Constructeur par défaut
+     */
+    public PolygoneRegulier() 
+    {
+        longueurDuCote=0;
+        nombreDeCotes=0;
+    }
+    /**
      * Conctructeur publique
      * @param l : longueur d'un coté
      * @param nb : nombre de cotés
@@ -26,6 +32,14 @@ public class PolygoneRegulier
     {
         longueurDuCote=l;
         nombreDeCotes=nb;
+    }
+
+    /**
+     * initialiser/Reinitialiser un polygoneRegulier
+     */
+    public void initialiser( int nCotes, int longueur){
+        nombreDeCotes = nCotes;
+        longueurDuCote = longueur;
     }
 
     /**
@@ -40,11 +54,11 @@ public class PolygoneRegulier
     public double surface() {
         return (
             nombreDeCotes*(longueurDuCote*longueurDuCote))
-            /
-            (4*Math.tan(Math.PI/nombreDeCotes)
+        /
+        (4*Math.tan(Math.PI/nombreDeCotes)
         );
     }
-    
+
     /**
      * Périmétre
      * @return le périmétre du plolygone régulier
@@ -52,11 +66,12 @@ public class PolygoneRegulier
     public double perimetre() {
         return nombreDeCotes*longueurDuCote;
     }
+
     /**
      * Obtenir longueur coté
      */
     public int getLongueurDuCote() {
         return longueurDuCote;
     }
-    
+
 }
