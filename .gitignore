@@ -3,3 +3,8 @@ _site
 .sass-cache
 Gemfile.lock
 *.gem
+*.class
+*.pkh
+*.ctxt
+*.bluej
+.DS_Store
