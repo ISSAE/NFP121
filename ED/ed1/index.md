@@ -20,8 +20,11 @@ Pour des raison d'unifications des commandes dans les 3 systèmes Linux, Mac et 
 1. Git pour windows installé alors vous posséder gitbash (un terminal de shell unix appelé bash)
 2. Un éditeur avancé "VS code" vous pouvez aussi utiliser tous simplement notepad!
 2. Lancer gitbash et éditer ou créer le fichier .bashrc et y insérer le code suivant: (le .bash doit être défini dans le répertoire HOME de votre utilisateur) executer la commande ```code $HOME/.bashrc``` 
+
+en fonction de votre répértoire d'installation Bluej (=> BLUEJ_HOME)
 ```bash
-export JAVA_HOME=/c/Program\ Files\ \(x86\)/BlueJ/jdk/
+export BLUEJ_HOME='/c/sharing/BlueJ'
+export JAVA_HOME=$BLUEJ_HOME/jdk
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
@@ -30,12 +33,19 @@ Quitter gitbash et re-rentrer
 essayer ensuite ```java -version``` et `javac -version`
 vous devriez obtenir quelque chose comme ceci
 ```bash
+ppfar@DomicileTerra MINGW64 /c/sharing/mesgit
 $ java -version
-java version "1.8.0_192"
-Java(TM) SE Runtime Environment (build 1.8.0_192-b12)
-Java HotSpot(TM) Client VM (build 25.192-b12, mixed mode)
+openjdk version "11.0.2" 2019-01-15
+OpenJDK Runtime Environment 18.9 (build 11.0.2+9)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.2+9, mixed mode)
+
+ppfar@DomicileTerra MINGW64 /c/sharing/mesgit
+$ javac -version
+javac 11.0.2
+
 ```
-# Le TD 1
+<hr/>
+# Le TDP (Travail Dirigé et Pratique) 1
 
 ## Rappels :
 
@@ -44,7 +54,7 @@ l'activité de programmation dans un "langage objet" consiste à écrire des cla
 * Les objets sont des instances de classes.
 * une application est une classe qui contient  la méthode  'main' (point d'entrée de l'application) de signature : "`public static void main(String [] a)`"
 
-Compilation - Exécution d'un Programme : (environnement Window) dans une fenêtre "cmd"
+Compilation - Exécution d'un Programme : (environnement Window) dans une fenêtre "cmd" ou "gitbash"
 
 L'ensemble des classes intervenant dans le programme doit d'abord être compilé :
 > `javac ...  xxx.java`  cette commande génère en cas de succès le fichier xxx.class
@@ -52,6 +62,7 @@ Java est alors interprété i.e. on soumet à l'interpréteur "java" le ".class"
 Exemple :
 
 ```java
+//Dans le fichier HelloWorld.java
 class HelloWorld {
    public String bonjour(){ 
         return "Bonjour tout le monde...";
@@ -63,6 +74,7 @@ class HelloWorld {
      } 
   }
 
+//Dans le fichier TestHelloWorld.java
 public class TestHelloWorld { 
       // application
      public static void main (String[] args) { 
@@ -76,7 +88,7 @@ public class TestHelloWorld {
 // les trois instructions retourne le même résultat...
      } 
   }
-  ```
+```
 
 [Exercice n°1](Exercices/ED00.1.Hello) : compilation, exécution "hello world"
 
