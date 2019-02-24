@@ -2,11 +2,11 @@
 titre: Intro à la POO + java "impératif"
 ---
 
-pour ce premier TD/TP en présentiel je vous monterais ce qu'il faut faire sur le PC de l'enseignant. En plus de devoir installer les logiciels et outils nécessaires; vous devrez écrire et exécuter les programmes pour que les exercices soient profitables (ne vous contenter pas de copier/coller et de lire ce document!).
+pour ce premier TD/TP en présentiel je vous monterais ce qu'il faut faire (_sur le PC de l'enseignant_). En plus de devoir installer les logiciels et outils nécessaires (_si vous avez d;jà fait les devoir de classroom c'est déjà fait!_); vous devrez écrire et exécuter les programmes pour que les exercices soient profitables (ne vous contenter pas de copier/coller et de lire ce document!).
 
 # Pré-requis
 
-* VS code : Un editeur de texte avancé par exemple [Visual Studio Code](https://code.visualstudio.com/download) (Open Source et disponible Linux, Mac, et windows) pour editer nos fichiers de scripts, les pages html les fichiers markdown et même le Java etc...
+* VS code : Un éditeur de texte avancé par exemple [Visual Studio Code](https://code.visualstudio.com/download) (Open Source et disponible Linux, Mac, et windows) pour editer nos fichiers de scripts, les pages html les fichiers markdown et même le Java etc...
 
 * GIT: [GIT pour windows](https://git-scm.com/download/win), tous le long de ce cours vous utiliserez git et github pour rendre les devoirs et les projets
 * BlueJ et JDK8 : Télécharger la dernière version de [BlueJ](https://www.bluej.org/) (si ce n'est pas déjà fait) cette version contient la JDK8
@@ -17,7 +17,7 @@ pour utiliser la même jdk que BlueJ en ligne de commande : définir la variable
 
 Pour des raison d'unifications des commandes dans les 3 systèmes Linux, Mac et windows. Voici une démarche pour ceux qui possède windows pour travailler en ligne de commande similaire a Unix (Linux et Mac)
 
-1. Git hub pour windows installé alors vous posséder gitbash (un terminal de shell unix appelé bash)
+1. Git pour windows installé alors vous posséder gitbash (un terminal de shell unix appelé bash)
 2. Un éditeur avancé "VS code" vous pouvez aussi utiliser tous simplement notepad!
 2. Lancer gitbash et éditer ou créer le fichier .bashrc et y insérer le code suivant: (le .bash doit être défini dans le répertoire HOME de votre utilisateur) executer la commande ```code $HOME/.bashrc``` 
 ```bash
