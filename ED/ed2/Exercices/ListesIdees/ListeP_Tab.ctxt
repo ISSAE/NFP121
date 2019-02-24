@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=ListeP_Tab()
+comment1.target=Object\ car()
+comment1.text=\nretourne\ la\ t\u00EAte\ de\ la\ tabImplantation.\ lecture\ seulement\n\n
+comment2.target=void\ cdr()
+comment2.text=\ndestruction\ du\ premier\ \u00E9l\u00E9ment\ de\ la\ tabImplantation\nATTENTION\ au\ redimensionnement\ du\ tableau\ quand\ c'est\ n\u00E9cessaire\n\n
+comment3.params=objet
+comment3.target=void\ cons(Object)
+comment3.text=\nproc\u00E9dure\ \:\ ajout\ d'un\ objet\ quelconque\ en\ d\u00E9but\ de\ tabImplantation\nATTENTION\ le\ tableau\ tabImplantation\ peut\ \u00EAtre\ plein\ cf\ java.lang.System\ pour\ \narraycopy(Object\ src,\ int\ srcPos,\ Object\ dest,\ int\ destPos,\ int\ length)\ \n\n
+comment4.params=lst
+comment4.target=void\ conc(ListePointInterface)
+comment4.text=\nproc\u00E9dure\ \:\ concat\u00E9nation\ d'une\ tabImplantation\ sur\ 'this'\nATTENTION\ cette\ version\ ne\ permet\ que\ la\ concat\u00E9nation\ d'une\ 'ListeP_Tab'\nr\u00E9fl\u00E9chir\ \u00E0\ la\ version\ g\u00E9n\u00E9rale...\n\n
+comment5.target=void\ renverse()
+comment5.text=\nproc\u00E9dure\ \:\ retouner\ une\ tabImplantation\ sur\ elle\ m\u00EAme\n\n
+comment6.params=objet
+comment6.target=boolean\ membre(Object)
+comment6.text=\npr\u00E9dicat\ \:\ objet\ est\ -il\ membre\ de\ la\ tabImplantation\ ?\nATTENTION\ \u00E0\ ne\ pas\ comparer\ n'importe\ quoi\ et\ obtenir\ "un\ false\ silecieux"\n\n
+comment7.target=String\ toString()
+comment8.target=Iterator\ iterator()
+comment8.text=un\ iterator\ implant\u00E9\ avec\ une\ classe\ anonyme\nmontrer\ avec\ une\ classe\ interne\ (et\ une\ classe\ externe\ ???)\nconstater\ les\ fichiers\ g\u00E9n\u00E9r\u00E9s.\n\n
+comment9.target=Object\ clone()
+numComments=10

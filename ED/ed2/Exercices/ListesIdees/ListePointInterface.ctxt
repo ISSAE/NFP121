@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Object\ car()
+comment0.text=\nretourne\ la\ valeur\ du\ premier\ \u00E9l\u00E9ment\ de\ la\ liste\ sans\ destruction\n\n
+comment1.target=void\ cdr()
+comment1.text=\nsupprime\ la\ tete\ de\ la\ liste\nremarque\ \:\ \ on\ ne\ peut\ pas\ supprimer\ la\ t\u00EAte\ d'une\ liste\ vide\n\n
+comment2.params=objet
+comment2.target=void\ cons(Object)
+comment2.text=\najoute\ 'obj'\ au\ d\u00E9but\ de\ la\ liste;\nla\ longueur\ de\ la\ liste\ est\ augment\u00E9e\ de\ 1\n\n
+comment3.params=liste
+comment3.target=void\ conc(ListePointInterface)
+comment3.text=\najoute\ en\ fin\ de\ liste\ la\ liste\ 'liste'\ \:\ c'est\ la\ concat\u00E9nation\n\n
+comment4.target=void\ renverse()
+comment4.text=\nretourne\ la\ liste\ sur\ elle\ m\u00EAme\n\n
+comment5.params=objet
+comment5.target=boolean\ membre(Object)
+comment5.text=\n'objet'\ appartient-il\ \u00E0\ la\ liste\ ?\n\n
+comment6.target=boolean\ listeVide()
+comment6.text=\n\n\n
+comment7.target=int\ longueur()
+comment7.text=\nretourne\ le\ nombre\ d'\u00E9l\u00E9ments\ dans\ la\ liste\n\n
+comment8.target=java.util.Iterator\ iterator()
+comment8.text=toString()\ ,\ equals(),\ \u2026\ \ sont\ "impos\u00E9e"\ par\ Java\ \=>\ elles\ ne\ figurent\ pas\ dans\ cette\ interface\n\n
+numComments=9

@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Object\ car()
+comment0.text=\nretourne\ la\ valeur\ du\ premier\ \u00E9l\u00E9ment\ de\ la\ liste\ sans\ destruction\n\n
+comment1.target=void\ cdr()
+comment1.text=\nsupprime\ la\ tete\ de\ la\ liste\nremarque\ \:\ \ on\ ne\ peut\ pas\ supprimer\ la\ t\u00EAte\ d'une\ liste\ vide\n\n
+comment10.params=m
+comment10.target=void\ ajouterDerriere(Maillon)
+comment2.params=obj
+comment2.target=void\ cons(Object)
+comment2.text=\najoute\ 'obj'\ au\ d\u00E9but\ de\ la\ liste;\nla\ longueur\ de\ la\ liste\ est\ augment\u00E9e\ de\ 1\n\n
+comment3.params=liste
+comment3.target=void\ conc(ListePointInterface)
+comment3.text=\najoute\ en\ fin\ de\ liste\ la\ liste\ 'liste'\n\n
+comment4.target=void\ renverse()
+comment4.text=\n\n\n
+comment5.params=objet
+comment5.target=boolean\ membre(Object)
+comment5.text=\n'objet'\ appartient-il\ \u00E0\ la\ liste\ ?\n\n
+comment6.target=String\ toString()
+comment7.target=Iterator\ iterator()
+comment8.target=Object\ clone()
+comment9.target=Maillon\ maillonDeTete()
+numComments=11
