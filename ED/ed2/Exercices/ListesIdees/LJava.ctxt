@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=LJava()
+comment0.text=\nDefault\ constructor\ for\ test\ class\ LJava\n\n
+comment1.target=void\ setUp()
+comment1.text=\nSets\ up\ the\ test\ fixture.\n\nCalled\ before\ every\ test\ case\ method.\n\n
+comment2.target=void\ tearDown()
+comment2.text=\nTears\ down\ the\ test\ fixture.\n\nCalled\ after\ every\ test\ case\ method.\n\n
+comment3.target=void\ testLjava()
+numComments=4

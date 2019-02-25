@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=boolean\ listeVide()
+comment1.target=int\ longueur()
+comment2.params=lst
+comment2.target=boolean\ equals(Object)
+numComments=3

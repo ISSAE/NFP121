@@ -21,7 +21,8 @@ L'activité de programmation étant primordiale dans ce cours, les TD seront des
 2. faire un fork de ce projet https://github.com/ISSAE/NFP121 , vous obtiendrez un clone qui vous appartiendra. Les travaux future se feront dans votre propre projet cloné.
 3. Les instructions vous seront donné sous forme de devoir dans la classroom http://classroom.isae.edu.lb 
 
+#  [préparer l'environnement de travail](tp0/index)
 # Liste des TP
-* [TP0 : préparer l'environnement de travail](tp0/index)
+* [TP0: introduction](https://issae.github.io/nfp121.tp0/)
 * [TP1](tp1/tp1)
 * [TP2](tp2/tp2)

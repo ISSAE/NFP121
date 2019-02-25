@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=cote\ coul
+comment0.target=Carre(int,\ Color)
+comment1.params=coul\ cote
+comment1.target=Carre(Color,\ int)
+comment2.target=int\ getCote()
+comment3.target=Color\ getCouleur()
+comment4.params=c
+comment4.target=void\ setCouleur(Color)
+comment5.target=String\ toString()
+comment6.params=oo
+comment6.target=boolean\ equals(Object)
+numComments=7

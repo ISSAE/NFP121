@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Object\ car()
+comment1.target=void\ cdr()
+comment2.params=objet
+comment2.target=void\ cons(Object)
+comment3.params=li
+comment3.target=void\ conc(ListePointInterface)
+comment4.target=void\ renverse()
+comment5.params=objet
+comment5.target=boolean\ membre(Object)
+comment6.target=Iterator\ iterator()
+comment7.target=String\ toString()
+comment8.params=lst
+comment8.target=boolean\ equals(Object)
+comment9.target=Object\ clone()
+numComments=10
