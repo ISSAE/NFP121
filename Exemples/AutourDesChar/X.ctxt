@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=X
+comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ X\ ici.\r\n\r\n\ @author\ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment1.params=
+comment1.target=X()
+comment1.text=\r\n\ Constructeur\ d'objets\ de\ classe\ X\r\n
+comment2.params=src
+comment2.target=java.lang.String\ translate(java.lang.String)
+comment3.params=
+comment3.target=void\ apprendre()
+comment3.text=\r\n\ Un\ exemple\ de\ m\u00E9thode\ -\ remplacez\ ce\ commentaire\ par\ le\ v\u00F4tre\r\n\r\n\ @param\ \ y\ \ \ le\ param\u00E8tre\ de\ la\ m\u00E9thode\r\n\ @return\ \ \ \ \ la\ somme\ de\ x\ et\ de\ ypublic\ static\ String\ translate(String\ src)\r\n
+numComments=4
