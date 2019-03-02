@@ -1,9 +1,9 @@
 import java.awt.Color;
 /**
- * Décrivez votre classe Carre ici.
+ * DÃ©crivez votre classe Carre ici.
  * 
  * @author (votre nom) 
- * @version (un numéro de version ou une date)
+ * @version (un numÃ©ro de version ou une date)
  */
 public class Carre
 {

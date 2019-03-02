@@ -8,8 +8,9 @@ titre: Programme et références NFP 121 Programmation Avancée 2018-2019
     * Cours 1 : [Introduction, vocable, les essentiels](https://nfp121.page.link/1) : Classes, instances, visibilité, héritage, spécialisation, surcharge 
     * Cours 2 : [Une Classe, et les aspects impératifs du langage](https://nfp121.page.link/2) : Classes abstraites, interfaces, classes internes, classes anonymes,
 méthodes, passage de paramètres, instructions, exceptions, assertions
-    * préparer L'[environnement de développement](/NFP121/TP/tp0/) pour NFP121 et faire [le premier TP TP1](/NFP121/TP/tp1/tp1)
-    * [Premier ED/TP](/NFP121/ED/ed1/)
+   * [Premier ED/TP](/NFP121/ED/ed1/)
+    * préparer L'[environnement de développement](/NFP121/TP/tp0/) pour NFP121 et faire [le premier TP : TP1](/nfp121.tp1/tp1/tp1)
+ 
 
 3.  **Semaine 25/2/2019**
     * Cours 3 : des rappels NFA031,NFA032,NFA035: [Interfaces, plusieurs Classes, Héritage, liaison dynamique, paquetages](https://nfp121.page.link/3). Et  introduction au "Design Pattern" 

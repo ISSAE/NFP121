@@ -3,8 +3,7 @@ titre: Exos assert, interface, types et classes
 ---
 
 
-Implémenter les listes pointées chères à
-LISP et à Prolog
+# Implémenter les listes pointées chères à LISP et à Prolog
 
 Informellement : une liste pointée est représentée par
 
@@ -12,7 +11,7 @@ L = TETE.Reste_de_la_Liste
 
 ou
 
-[TETE . Reste_de_la_Liste ]
+[TETE  Reste_de_la_Liste ]
 
 en LISP traditionnellement TETE est obtenue traditionnellement par la fonction
 car() et Reste_de_la_Liste par la fonction cdr(). Nous
@@ -130,10 +129,13 @@ que peut-on transferer "au maximum" dans cette classe abstraite ?
 développer la méthode clone dans chacune des classes. d'abord
 une copie superficielle puis une copie profonde.
 
-## F/<a HREF="Exercices/listes3.jar">des idées à perfectionner... </a>(Bluej)
+## F/des idées à perfectionner... Ouvrir dans blueJ le répertoire <RACINEDESGIT>\NFP121\ED\ed2\Exercices\ListesIdees 
 
-# Expressions Arithmétiques
-  entières 
+_ne faite ceci qu'après avoir essayer de résoudre les questions seul..._ 
+
+<hr COLOR="#00ff00" />
+
+# Expressions Arithmétiques entières 
 
 <hr COLOR="#00ff00" />
 
