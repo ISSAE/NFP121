@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=I
+comment0.text=\r\n\ D\u00E9crivez\ votre\ interface\ I\ ici.\r\n\r\n\ @author\ \ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment1.params=y
+comment1.target=int\ exempleDeMethode(int)
+comment1.text=\r\n\ Exemple\ d'ent\u00EAte\ de\ m\u00E9thode\ -\ remplacez\ ce\ commentaire\ par\ le\ v\u00F4tre\r\n\r\n\ @param\ \ y\ \ \ \ le\ param\u00E8tre\ de\ cette\ m\u00E9thode\r\n\ @return\ \ \ \ \ \ \ \ le\ r\u00E9sultat\ retourn\u00E9\ par\ exempleDeMethode\r\n
+numComments=2
