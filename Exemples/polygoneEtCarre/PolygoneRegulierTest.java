@@ -80,7 +80,7 @@ public class PolygoneRegulierTest
     {
         PolygoneRegulier polygone1 = new PolygoneRegulier(1, 4);
         //Il est très probable que ce test soit toujours en échec
-        assertEquals(1.0, polygone1.surface(), 0.0);
+        assertEquals(1.0, polygone1.surface(), 0.1);
     }
 }
 
