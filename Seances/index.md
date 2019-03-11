@@ -21,7 +21,7 @@ méthodes, passage de paramètres, instructions, exceptions, assertions
 4. Quelques Patrons et programmation évènementielle
     * cours 5: [Les patrons Observateur/Observé, Stratégie, présentation du Composite
 Modèle Vue Contrôleur, MVC](https://nfp121.page.link/5)
-    * [Swing IHM, JApplet, MVC](https://nfp121.page.link/6)
+    * cours 6 [Swing IHM, JApplet, MVC](https://nfp121.page.link/6)
 
 5. -1.xxx Collections
 
