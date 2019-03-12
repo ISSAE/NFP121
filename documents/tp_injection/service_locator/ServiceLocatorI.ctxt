@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ServiceLocatorI
+comment0.text=\ Recherche\ d'un\ bean,\ apparent\u00E9\ "service"\ dans\ \r\n\ \ un\ conteneur\ de\ conteneur\ de\ beans\r\n
+comment1.params=serviceName
+comment1.target=java.lang.Object\ lookup(java.lang.String)
+comment1.text=\ Recherche\ d'un\ bean,\ \u00E0\ l'aide\ de\ son\ nom.\r\n
+comment2.params=container
+comment2.target=void\ setContainer(container.ApplicationContext)
+comment2.text=\ Ajout\ de\ conteneur,\ 'setContainer'\:\ il\ faut\ lire\ 'addContainer'\r\n\ Attention\ pas\ de\ tests\ sur\ la\ pr\u00E9sence\ \u00E9ventuelle\ de\ doublons\r\n\ @exception\ si\ l'ajout\ des\ services\ \u00E9choue\ (fichier\ inexistant...)\r\n
+comment3.params=
+comment3.target=java.util.Iterator\ iterator()
+comment3.text=\ Retourne\ un\ it\u00E9rateur\ sur\ les\ services\ accessibles.\r\n\ Tous\ les\ beans\ de\ tous\ les\ conteneurs\ ajout\u00E9s\r\n
+numComments=4

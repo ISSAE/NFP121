@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=ApplicationContext
+comment0.text=\r\n\ <b>femtoContainer</b>\ est\ unn\ conteneur\ de\ beans\ adapt\u00E9\ au\ cours\ NFP121\ du\ Cnam.<br><br>\r\n\ L'injection\ des\ d\u00E9pendances\ est\ effectu\u00E9e\ par\ l'appel\ des\ mutateurs.<br>\r\n\ Un\ fichier\ de\ configuration\ pr\u00E9cise\ les\ noms\ des\ beans\ et\ des\ propri\u00E9t\u00E9s\ \u00E0\ injecter<br>\r\n\ Le\ format\ du\ fichier\ est\ d\u00E9fini\ depuis\ la\ classe\ Factory\ cf.\ la\ classe\ container.Factory<br><br>\r\n\r\n\ <br><u>Un\ exemple\ d'utilisation\:</u><br>\r\n\ <pre>\r\n\ import\ container.*;\r\n\ ...\r\n\ ApplicationContext\ ctx\ \=\ Factory.createApplicationContext("./martin_fowler/README.TXT");\r\n\ MovieLister\ lister\ \=\ ctx.getBean("movieLister");\r\n\ </pre>\r\n\ @author\ jean-michel\ Douin\r\n\ @version\ 19\ septembre\ 2018\r\n\ @see\ https\://fr.wikipedia.org/wiki/JavaBeans\r\n\ @see\ container.Factory\r\n
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment1.text=\ Obtention\ du\ nom\ de\ ce\ conteneur.\r\n\ @return\ son\ nom\r\n
+comment2.params=id
+comment2.target=java.lang.Object\ getBean(java.lang.String)
+comment2.text=\ Obtention\ d'une\ instance\ d'un\ bean\ du\ conteneur.\r\n\ \ Il\ n'existe\ qu'une\ seule\ instance\ avec\ cet\ id\ (un\ singleton).\r\n\ @param\ id\ l'identifiant\ unique\ du\ bean\r\n\ @return\ l'instance\ associ\u00E9e\r\n\ @throws\ RuntimeException\ "pas\ de\ bean\ avec\ cet\ identifiant\:\ "\ +\ id\r\n
+comment3.params=id
+comment3.target=java.lang.Class\ getType(java.lang.String)
+comment3.text=\ Obtention\ du\ type\ du\ bean\ \u00E0\ partir\ de\ son\ identifiant.\r\n\ @param\ id\ l'identifiant\ unique\ du\ bean\r\n\ @return\ le\ type,instance\ de\ la\ classe\ Class\ du\ bean\r\n\ @throws\ RuntimeException\ "pas\ de\ bean\ avec\ cet\ identifiant\:\ "\ +\ id\r\n
+comment4.params=
+comment4.target=java.util.Iterator\ iterator()
+comment4.text=\ Obtention\ d'un\ it\u00E9rateur\ sur\ les\ beans\ pr\u00E9sents\ dans\ ce\ conteneur.\r\n\ L'op\u00E9ration\ de\ retrait\ \:\ remove,\ est\ sans\ effet.\r\n\ @return\ un\ it\u00E9rateur\ des\ identifiants\ du\ conteneur\r\n
+comment5.params=appContext
+comment5.target=void\ addApplicationContext(ApplicationContext)
+comment5.text=\ Ajout,\ cumul\ d'une\ autre\ instance\ d'ApplicationContext\r\n\ Tous\ les\ beans\ de\ l'instance\ appContext\ sont\ ajout\u00E9s\ au\ conteneur\ en\ cours.\r\n\ @param\ appContext\ le\ conteneur\ \u00E0\ ajouter\r\n\ @throws\ RuntimeException\ "d\u00E9j\u00E0\ un\ bean\ avec\ cet\ identifiant\:\ "\ +\ id\r\n
+numComments=6

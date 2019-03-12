@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Cours
+comment1.params=service
+comment1.target=void\ setService(ServiceI)
+comment2.params=
+comment2.target=java.util.List\ getInscrits()
+numComments=3

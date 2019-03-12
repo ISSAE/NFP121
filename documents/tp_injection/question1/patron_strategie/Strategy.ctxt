@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Strategy
+comment0.text=\r\n\ https\://www.tutorialspoint.com/design_pattern/strategy_pattern.htm\r\n\r\n\ @version\ 7\ d\u00E9cembre\ 2017\r\n
+comment1.params=num1\ num2
+comment1.target=int\ doOperation(int,\ int)
+numComments=2

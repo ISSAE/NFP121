@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ActionAuClick
+comment1.params=ae
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=ihm
+comment2.target=void\ setIhm(IHM)
+numComments=3

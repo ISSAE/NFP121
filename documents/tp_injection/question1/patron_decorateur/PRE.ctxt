@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=PRE
+comment1.params=
+comment1.target=PRE()
+comment2.params=texte
+comment2.target=PRE(Texte)
+comment3.params=
+comment3.target=java.lang.String\ toHTML()
+numComments=4

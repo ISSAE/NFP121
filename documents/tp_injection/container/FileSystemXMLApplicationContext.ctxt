@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=FileSystemXMLApplicationContext
+comment1.params=
+comment1.target=java.lang.String\ getContainerName()
+comment2.params=inputStream
+comment2.target=FileSystemXMLApplicationContext(java.io.InputStream)
+numComments=3

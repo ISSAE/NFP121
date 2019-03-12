@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Auditeur
+comment1.params=nom\ pr\u00E9nom\ matricule
+comment1.target=Auditeur(java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=2

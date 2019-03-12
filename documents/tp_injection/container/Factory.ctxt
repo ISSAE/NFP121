@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Factory
+comment0.text=\r\n\ <b>femtoContainer</b>\ Un\ conteneur\ de\ beans\ adapt\u00E9\ au\ cours\ NFP121.\r\n\ Injection\ de\ d\u00E9pendances\ par\ mutateur.<br>\r\n\r\n\ Une\ fabrique\ de\ conteneur\ en\ fonction\ du\ format\ du\ fichier\ de\ configuration.<b>\r\n\ Un\ seul\ format\ de\ fichier\ pour\ le\ moment,\ Un\ fichier\ de\ Properties.\r\n\ @author\ jm\ Douin\r\n\ @version\ 14\ Janvier\ 2018\r\n\ @see\ container\ container.FileSystemPropsApplicationContext\r\n
+comment1.params=fileName
+comment1.target=ApplicationContext\ createApplicationContext(java.lang.String)
+comment2.params=filename\ className
+comment2.target=ApplicationContext\ createApplicationContext(java.lang.String,\ java.lang.String[])
+comment2.text=\ Ajout\ en\ pr\u00E9cisant\ le\ nom\ du\ fichier.\r\n\ @param\ fileName\ le\ nom\ du\ fichier\ de\ configuration\ des\ beans\r\n\ @param\ className\ (optionnel),\ pr\u00E9cise\ le\ nom\ de\ la\ classe\ associ\u00E9\ au\ format\ de\ configuration\r\n\ par\ d\u00E9faut,\ ce\ sera\ FileSystemPropsApplicationContext(InputStream)\ qui\ sera\ s\u00E9lectionn\u00E9).\r\n\ Ce\ nom\ de\ classe\ peut\ aussi\ \u00EAtre\ d\u00E9fini\ sur\ la\ ligne\ de\ commandes\ \r\n\ java\ -Dfactory.class\=package.FileSystemPropsApplicationContext\ -Dverbose\=true\ ...\r\n
+comment3.params=fileNames
+comment3.target=ApplicationContext\ createApplicationContext(java.lang.String[])
+comment3.text=\ Ajout,\ cumul\ de\ plusieurs\ fichiers\ de\ configuration.\r\n\ A\ chaque\ fichier\ le\ format\ choisi\ props,\ xml,\ json\ ...\r\n\ @param\ fileNames\ les\ noms\ des\ fichiers\r\n
+numComments=4

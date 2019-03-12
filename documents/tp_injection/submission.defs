@@ -1,0 +1,28 @@
+jnews_NFP121{
+  tp_injection_question1_deposer{
+    .file.exclude=*.class;
+    .file.jar=tp_injection_q1.jar;
+    .transport=http://jfod.cnam.fr/jnews/junit3/deposer.html?auteur=<field:auteur>&matricule=<field:matricule>&uv=NFP121&tp=tp_inject_q1&client=bluej;
+  }
+  tp_injection_question2_contribuer{
+    .file.exclude=*.class;
+    .file.jar=tp_injection_q2.jar;
+    .transport=http://jfod.cnam.fr/jnews/junit3/contribuer.html?auteur=<field:auteur>&matricule=<field:matricule>&uv=NFP121&tp=tp_inject_q2&client=bluej;
+  }
+   tp_injection_question3_contribuer{
+    .file.exclude=*.class;
+    .file.jar=tp_injection_q3.jar;
+    .transport=http://jfod.cnam.fr/jnews/junit3/contribuer.html?auteur=<field:auteur>&matricule=<field:matricule>&uv=NFP121&tp=tp_inject_q3&client=bluej;
+  }
+ 
+  historique{
+    .file.include=README.TXT;
+    .transport=http://jfod.cnam.fr/jnews/interrogation/historique.html?auteur=<field:auteur>&matricule=<field:matricule>&uv=NFP121&client=bluej;
+  }
+  historiqueResultats{
+    .file.include=README.TXT;
+    .transport=http://jfod.cnam.fr/jnews/interrogation/historiqueResultats.html?auteur=<field:auteur>&matricule=<field:matricule>&uv=NFP121&client=bluej;
+  }
+
+
+}

@@ -24,5 +24,5 @@ L'activité de programmation étant primordiale dans ce cours, les TD seront des
 #  [préparer l'environnement de travail](tp0/index)
 # Liste des TP
 * [TP0: introduction](https://issae.github.io/nfp121.tp0/)
-* [TP1](tp1/tp1)
-* [TP2](tp2/tp2)
+* [TP1](https://issae.github.io/nfp121.tp1/)
+* [TP2](https://issae.github.io/nfp121.tp2/)

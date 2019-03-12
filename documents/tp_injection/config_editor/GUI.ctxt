@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=GUI
+comment1.params=
+comment1.target=GUI()
+comment2.params=e
+comment2.target=void\ windowClosing(java.awt.event.WindowEvent)
+comment3.params=
+comment3.target=void\ verifyProperties()
+comment3.text=\ Quelques\ v\u00E9rifications\ du\ fichier\ de\ properties,\ loin\ d'\u00EAtre\ compl\u00E8tes\r\n\ \r\n
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

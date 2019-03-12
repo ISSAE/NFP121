@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=AbstractApplicationContext
+comment0.text=\r\n\ <b>femtoContainer</b>\ Un\ conteneur\ de\ beans\ adapt\u00E9\ au\ cours\ NFP121.\r\n\ Injection\ de\ d\u00E9pendances\ par\ mutateur.\r\n\ Ce\ conteneur\ est\ aussi\ un\ bean\ cf.\ ServiceLocator.\r\n\r\n\ @author\ jm\ Douin\r\n\ @version\ 14\ Janvier\ 2018\r\n
+comment1.params=
+comment1.target=AbstractApplicationContext()
+comment2.params=name
+comment2.target=void\ setName(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=id
+comment4.target=java.lang.Object\ getBean(java.lang.String)
+comment5.params=id
+comment5.target=java.lang.Class\ getType(java.lang.String)
+comment6.params=
+comment6.target=java.util.Iterator\ iterator()
+comment7.params=context
+comment7.target=void\ addApplicationContext(ApplicationContext)
+numComments=8

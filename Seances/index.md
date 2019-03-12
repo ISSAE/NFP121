@@ -15,8 +15,8 @@ méthodes, passage de paramètres, instructions, exceptions, assertions
 3.  **Semaine 25/2/2019**
     * Cours 3 : des rappels NFA031,NFA032,NFA035: [Interfaces, plusieurs Classes, Héritage, liaison dynamique, paquetages](https://nfp121.page.link/3). Et  introduction au "Design Pattern" 
     * Cours 4 : Design Pattern : [les fondamentaux, Les patrons Adaptateur et Procuration](https://nfp121.page.link/4)
-    * [Deuxième TP en autonome]()
-    * [ED/TP 2]()
+    * [Deuxième TP en autonome](https://issae.github.io/nfp121.tp2/)
+    * [ED/TP 2](/NFP121/ED/ed2/)
 
 4. 1 xxx Quelques Patrons et programmation évènementielle
 

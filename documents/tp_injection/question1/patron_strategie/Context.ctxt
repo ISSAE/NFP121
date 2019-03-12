@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Context
+comment1.params=strategy
+comment1.target=Context(Strategy)
+comment2.params=
+comment2.target=Context()
+comment3.params=strategy
+comment3.target=void\ setStrategy(Strategy)
+comment4.params=num1\ num2
+comment4.target=int\ executeStrategy(int,\ int)
+numComments=5
