@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Light
-comment1.params=
-comment1.target=void\ on()
-comment2.params=
-comment2.target=void\ off()
-comment3.params=
-comment3.target=java.lang.String\ getState()
-numComments=4

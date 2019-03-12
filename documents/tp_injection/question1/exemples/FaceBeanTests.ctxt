@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=FaceBeanTests
-comment1.params=
-comment1.target=void\ testFaceBean()
-comment2.params=
-comment2.target=void\ testFirePropertyChange()
-comment3.params=
-comment3.target=void\ testFirePropertyChangeSansInjection()
-numComments=4

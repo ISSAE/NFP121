@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=FaceBeanPropertyChangeListener
-comment1.params=e
-comment1.target=void\ propertyChange(java.beans.PropertyChangeEvent)
-comment2.params=e
-comment2.target=void\ vetoableChange(java.beans.PropertyChangeEvent)
-numComments=3
