@@ -18,14 +18,10 @@ méthodes, passage de paramètres, instructions, exceptions, assertions
     * [Deuxième TP en autonome](https://issae.github.io/nfp121.tp2/)
     * [ED/TP 2](/NFP121/ED/ed2/)
 
-4. 1 xxx Quelques Patrons et programmation évènementielle
-
-Les patrons Observateur/Observé, Stratégie, présentation du Composite
-Modèle Vue Contrôleur, MVC
-
-4. 2 xxx Swing (uniquement les diapositives 56 à 72)
-
-IHM, JApplet, MVC
+4. Quelques Patrons et programmation évènementielle
+    * cours 5: [Les patrons Observateur/Observé, Stratégie, présentation du Composite
+Modèle Vue Contrôleur, MVC](https://nfp121.page.link/5)
+    * cours 6 [Swing IHM, JApplet, MVC](https://nfp121.page.link/6)
 
 5. -1.xxx Collections
 
