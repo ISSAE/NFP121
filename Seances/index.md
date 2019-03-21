@@ -22,6 +22,8 @@ méthodes, passage de paramètres, instructions, exceptions, assertions
     * cours 5: [Les patrons Observateur/Observé, Stratégie, présentation du Composite
 Modèle Vue Contrôleur, MVC](https://nfp121.page.link/5)
     * cours 6 [Swing IHM, JApplet, MVC](https://nfp121.page.link/6)
+    * [ED/TP 3](https://issae.github.io/nfp121.ed3/)
+    * [TP3 en autonome](https://issae.github.io/nfp121.tp3/)
 
 5. -1.xxx Collections
 
