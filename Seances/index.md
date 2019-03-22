@@ -12,32 +12,27 @@ méthodes, passage de paramètres, instructions, exceptions, assertions
     * préparer L'[environnement de développement](/NFP121/TP/tp0/) pour NFP121 et faire [le premier TP : TP1](/nfp121.tp1/tp1/tp1)
  
 
-3.  **Semaine 25/2/2019**
+2.  **Semaine 25/2/2019**
     * Cours 3 : des rappels NFA031,NFA032,NFA035: [Interfaces, plusieurs Classes, Héritage, liaison dynamique, paquetages](https://nfp121.page.link/3). Et  introduction au "Design Pattern" 
     * Cours 4 : Design Pattern : [les fondamentaux, Les patrons Adaptateur et Procuration](https://nfp121.page.link/4)
     * [Deuxième TP en autonome](https://issae.github.io/nfp121.tp2/)
     * [ED/TP 2](/NFP121/ED/ed2/)
 
-4. Quelques Patrons et programmation évènementielle
+3. Quelques Patrons et programmation évènementielle
     * cours 5: [Les patrons Observateur/Observé, Stratégie, présentation du Composite
 Modèle Vue Contrôleur, MVC](https://nfp121.page.link/5)
     * cours 6 [Swing IHM, JApplet, MVC](https://nfp121.page.link/6)
     * [ED/TP 3](https://issae.github.io/nfp121.ed3/)
     * [TP3 en autonome](https://issae.github.io/nfp121.tp3/)
 
-5. -1.xxx Collections
-
-Les Collections : traitement de manière uniforme de tous les agrégats d'éléments
+4. Collections et Généricité
+    * [Les Collections](https://nfp121.page.link/7) : traitement de manière uniforme de tous les agrégats d'éléments
 Quelques patrons : Itérateur, Template Méthode, Fabrique Méthode et Fabrique abstraite
+    * [Généricité](https://nfp121.page.link/8) : vers un typage plus rigoureux. et les questions 1 et 2 de l'examen de février 2016
+    * Synthèse des premiers cours : Une architecture du tp3 question2 inspirée des collections et une revue des patrons  Adaptateur, Template Méthode, Itérateur, Proxy, Stratégie
 
-5. -2.xxx Synthèse des premiers cours
-
-Une architecture du tp3 question2 inspirée des collections et une revue des patrons  Adaptateur, Template Méthode, Itérateur, Proxy, Stratégie
-
-5. -2.xxx Généricité 
-
-Généricité : vers un typage plus rigoureux. et les questions 1 et 2 de l'examen de février 2016
-
+<hr/>
+//TODO
 6. -1 xxx Structures de données et Patterns de conception
 
 Les patrons : Composite, Visiteur, Interpréteur 
