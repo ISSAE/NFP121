@@ -26,3 +26,4 @@ L'activité de programmation étant primordiale dans ce cours, les TD seront des
 * [TP0: introduction](https://issae.github.io/nfp121.tp0/)
 * [TP1](https://issae.github.io/nfp121.tp1/)
 * [TP2](https://issae.github.io/nfp121.tp2/)
+* [TP3 ](https://issae.github.io/nfp121.tp3/)
