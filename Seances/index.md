@@ -30,6 +30,8 @@ Modèle Vue Contrôleur, MVC](https://nfp121.page.link/5)
 Quelques patrons : Itérateur, Template Méthode, Fabrique Méthode et Fabrique abstraite
     * [Généricité](https://nfp121.page.link/8) : vers un typage plus rigoureux. et les questions 1 et 2 de l'examen de février 2016
     * Synthèse des premiers cours : Une architecture du tp3 question2 inspirée des collections et une revue des patrons  Adaptateur, Template Méthode, Itérateur, Proxy, Stratégie
+    * [TP4 en autonome](https://issae.github.io/nfp121.tp4/)
+    * [TP5 en autonome](https://issae.github.io/nfp121.tp5/)
 
 <hr/>
 //TODO
