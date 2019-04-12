@@ -33,15 +33,12 @@ Quelques patrons : Itérateur, Template Méthode, Fabrique Méthode et Fabrique 
     * [TP4 en autonome](https://issae.github.io/nfp121.tp4/)
     * [TP5 en autonome](https://issae.github.io/nfp121.tp5/)
 
+5. Structures de données et Patterns de conception
+    * [Les patrons : Composite, Visiteur, Interpréteur, ...](https://nfp121.page.link/9)
+    * [Les patrons : Memento, Command, Template Method, ...](https://nfp121.page.link/10)
+
 <hr/>
 //TODO
-6. -1 xxx Structures de données et Patterns de conception
-
-Les patrons : Composite, Visiteur, Interpréteur 
-6. -2  xxx Patterns de conception suite
-
-Les patrons : Memento, Command, Template Method, ...
-
 7. 1.  xxx Introspection et réflexivité en Java
 
 La classe Class, introduction aux  Java Beans, l'outil BeanBox, les patrons Visiteur et Procuration avec introspection
