@@ -30,19 +30,22 @@ Modèle Vue Contrôleur, MVC](https://nfp121.page.link/5)
 Quelques patrons : Itérateur, Template Méthode, Fabrique Méthode et Fabrique abstraite
     * [Généricité](https://nfp121.page.link/8) : vers un typage plus rigoureux. et les questions 1 et 2 de l'examen de février 2016
     * Synthèse des premiers cours : Une architecture du tp3 question2 inspirée des collections et une revue des patrons  Adaptateur, Template Méthode, Itérateur, Proxy, Stratégie
+    * [Ed4](https://issae.github.io/nfp121.ed4/)
     * [TP4 en autonome](https://issae.github.io/nfp121.tp4/)
     * [TP5 en autonome](https://issae.github.io/nfp121.tp5/)
 
 5. Structures de données et Patterns de conception
     * [Les patrons : Composite, Visiteur, Interpréteur, ...](https://nfp121.page.link/9)
     * [Les patrons : Memento, Command, Template Method, ...](https://nfp121.page.link/10)
+    * [Autour des expression mathématique](https://issae.github.io/nfp121.ed5/)
 
-<hr/>
-//TODO
-7. 1.  xxx Introspection et réflexivité en Java
+
+6. Introspection et réflexivité en Java
+    * [Introspection et réflexivité en Java](https://nfp121.page.link/11)
 
 La classe Class, introduction aux  Java Beans, l'outil BeanBox, les patrons Visiteur et Procuration avec introspection
-
+<hr/>
+//TODO
 7. 2.  xxx Injection de dépendances
 
 A la recherche du couplage faible, les patrons Inversion de contrôle et injection de dépendances
