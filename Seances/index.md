@@ -43,17 +43,16 @@ Quelques patrons : Itérateur, Template Méthode, Fabrique Méthode et Fabrique 
 6. Introspection et réflexivité en Java
     * [Introspection et réflexivité en Java](https://nfp121.page.link/11)
 
+7. Injection de dépendances
+    * [A la recherche du couplage faible, les patrons Inversion de contrôle et injection de dépendances](https://nfp121.page.link/12)
+
 La classe Class, introduction aux  Java Beans, l'outil BeanBox, les patrons Visiteur et Procuration avec introspection
 <hr/>
 //TODO
-7. 2.  xxx Injection de dépendances
-
-A la recherche du couplage faible, les patrons Inversion de contrôle et injection de dépendances
 
 8.    xxx Patterns de conception suite
 
 Le patron Décorateur : Pré,Post assertions, invariant de classe
-
 
 10.   xxx XML et JAVA
 
